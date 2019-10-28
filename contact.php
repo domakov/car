@@ -2,10 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<?
-	include_once ('includes/head.php');
+	include_once ('includes/head.php')
 	?>
 </head>
-<body class="not_found">
+<body class="contacts">
 	<!--BEGIN HEADER-->
 		<div id="header">
 			<div class="top_info">
@@ -27,13 +27,14 @@
 					<div id="navigation">
 						<span>Home</span>
 						<ul>
-							<li class="current"><a href="#">Home</a></li>
+							<li class="current"><a href="../index.php">Home</a></li>
 							<li><a href="#">About Us</a></li>
 							<li><a href="#">Blog</a></li>
 							<li><a href="#">News</a></li>
 							<li><a href="#">For Salers</a></li>
 							<li><a href="#">Contacts</a></li>
 						</ul>
+		</div>
 					</div>
 					<div id="search_form">
 						<form method="get" action="#">
@@ -48,40 +49,98 @@
 	<!--BEGIN CONTENT-->
 		<div id="content">
 			<div class="content">
-				<div class="counter_heading">We’ll be here soon with a new website. Estimated time remaining:</div>
-				<div class="counter_wrapper">
-					<div id="counter"></div>
+				<div class="breadcrumbs">
+					<a href="#">Home</a>
+					<img src="images/marker_2.gif" alt=""/>
+					<span>Contact Us</span>
 				</div>
-				<div class="newsletter">
-					<div class="title">We are building new? beautiful website. In the meantime, while here, you can use the form below to subscribe to our newsletter. </div>
-					<form method="get" action="#">
-						<input type="text" onblur="if(this.value=='') this.value='Your E-mail...';" onfocus="if(this.value=='Your E-mail...') this.value='';" value="Your E-mail..." class="txb"/>
-						<input type="submit" value="subscribe" class="btn_subscribe"/>
-					</form>
-				</div>
-				<div class="needs_wrapper">
-					<div class="post_block">
-						<h3><strong>What</strong> we have finished</h3>
-						<ul>
-							<li>The main website design</li>
-							<li>User database</li>
-							<li>Dynamic elements</li>
-						</ul>
+				<div class="main_wrapper">
+					<h1><strong>Contact</strong> Us</h1>
+					<div class="contacts_box">
+						<div class="left">
+							<h3><strong>Contact</strong> details</h3>
+							<div class="addr detail">Berlin, Germany, nr. 250330,<br/>main street</div>
+							<div class="phones detail">0040 742 016 756<br/>0040 742 016 756</div>
+							<div class="email detail single_line"><a href="mailto:#" class="markered">office@autodealer.com</a></div>
+							<div class="web detail single_line"><a href="#">http://www.autodealer.com</a></div>
+						</div>
+						<div class="map">
+							<div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+		<div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+        var setting = {"height":751,"width":803,"zoom":17,"queryString":"просп. Алии Молдагуловой 36, Актобе 030012, Казахстан","place_id":"ChIJ3XJezjIigkERNWEtRUG5iVc","satellite":true,"centerCoord":[50.28869954135061,57.149717486427484],"cid":"0xd51cbc5fb8879fbd","cityUrl":"/kazakhstan/aktobe-17438","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"105416"};
+        var d = document;
+        var s = d.createElement('script');
+        s.src = 'https://1map.com/js/script-for-user.js?embed_id=105416';
+        s.async = true;
+        s.onload = function (e) {
+          window.OneMap.initMap(setting)
+        };
+        var to = d.getElementsByTagName('script')[0];
+        to.parentNode.insertBefore(s, to);
+      })();</script><a href="https://1map.com/map-embed?embed_id=105416">1map.com</a></div>
+							<!--<iframe width="668" height="288" src="https://maps.google.com.ua/maps?f=q&amp;source=s_q&amp;hl=ruamp;hl=en&amp;geocode=&amp;q=%D0%9C%D0%B0%D0%BD%D1%85%D1%8D%D1%82%D1%82%D0%B5%D0%BD,+%D0%9D%D1%8C%D1%8E-%D0%99%D0%BE%D1%80%D0%BA,+%D0%A1%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5+%D0%A8%D1%82%D0%B0%D1%82%D1%8B+%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B8&amp;aq=0&amp;oq=%D0%BC%D0%B0%D0%BD&amp;sll=46.933064,32.007997&amp;sspn=0.243347,0.676346&amp;ie=UTF8&amp;hq=&amp;hnear=%D0%9C%D0%B0%D0%BD%D1%85%D1%8D%D1%82%D1%82%D0%B5%D0%BD,+%D0%9D%D1%8C%D1%8E-%D0%99%D0%BE%D1%80%D0%BA,+%D0%9D%D1%8C%D1%8E+%D0%99%D0%BE%D1%80%D0%BA,+%D0%9D%D1%8C%D1%8E-%D0%99%D0%BE%D1%80%D0%BA,+%D0%A1%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D1%91%D0%BD%D0%BD%D1%8B%D0%B5+%D0%A8%D1%82%D0%B0%D1%82%D1%8B+%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B8&amp;t=m&amp;ll=40.79042,-73.959961&amp;spn=0.14972,0.457993&amp;z=11&amp;iwloc=A&amp;output=embed"></iframe>-->
+						</div>
 					</div>
-					<div class="post_block center">
-						<h3><strong>What</strong> we are working on</h3>
-						<ul>
-							<li>The main website design</li>
-							<li>User database</li>
-							<li>Dynamic elements</li>
-						</ul>
+					<div class="contact_form">
+						<h2><strong>Drop</strong> us a line</h2>
+						<form method="get" action="#">
+							<div class="fld_box">
+								<label>Name: </label>
+								<input type="text" value=""/>
+							</div>
+							<div class="fld_box center">
+								<label>E-mail: </label>
+								<input type="text" value=""/>
+							</div>
+							<div class="fld_box last">
+								<label>Website: </label>
+								<input type="text" value=""/>
+							</div>
+							<div class="clear"></div>
+							<label>Message: </label>
+							<textarea cols="20" rows="20"></textarea>
+							<input type="submit" value="submit" class="submit"/>
+						</form>
 					</div>
-					<div class="post_block last">
-						<h3><strong>What</strong> we need to do</h3>
-						<ul>
-							<li>The main website design</li>
-							<li>User database</li>
-							<li>Dynamic elements</li>
+					<div class="personal_box">
+						<h2><strong>Sales</strong> reps</h2>
+						<ul class="personal_list">
+							<li>
+								<img src="images/placeholders/138x138.gif" alt="" class="thumb"/>
+								<div class="inner">
+									<h4>Jesica Thompson</h4>
+									<div class="grey_area"><span>0040 742 016 756,</span><span>0040 742 016 756</span></div>
+									<div class="fL">Location: Berlin, Germany</div>
+									<div class="fR"><a href="mailto:#" class="markered">Contact via e-mail </a></div>
+								</div>
+							</li>
+							<li class="last">
+								<img src="images/placeholders/138x138.gif" alt="" class="thumb"/>
+								<div class="inner">
+									<h4>Jesica Thompson</h4>
+									<div class="grey_area"><span>0040 742 016 756,</span><span>0040 742 016 756</span></div>
+									<div class="fL">Location: Berlin, Germany</div>
+									<div class="fR"><a href="mailto:#" class="markered">Contact via e-mail </a></div>
+								</div>
+							</li>
+							<li>
+								<img src="images/placeholders/138x138.gif" alt="" class="thumb"/>
+								<div class="inner">
+									<h4>Jesica Thompson</h4>
+									<div class="grey_area"><span>0040 742 016 756,</span><span>0040 742 016 756</span></div>
+									<div class="fL">Location: Berlin, Germany</div>
+									<div class="fR"><a href="mailto:#" class="markered">Contact via e-mail </a></div>
+								</div>
+							</li>
+							<li class="last">
+								<img src="images/placeholders/138x138.gif" alt="" class="thumb"/>
+								<div class="inner">
+									<h4>Jesica Thompson</h4>
+									<div class="grey_area"><span>0040 742 016 756,</span><span>0040 742 016 756</span></div>
+									<div class="fL">Location: Berlin, Germany</div>
+									<div class="fR"><a href="mailto:#" class="markered">Contact via e-mail </a></div>
+								</div>
+							</li>
 						</ul>
 					</div>
 				</div>
