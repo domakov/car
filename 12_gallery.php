@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<?
-	include ('includes/head.php');
+	include_once ('includes/head.php')
 	?>
 </head>
 <body class="index">
