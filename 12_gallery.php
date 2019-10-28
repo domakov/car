@@ -60,35 +60,35 @@
 								</div>
 							</div>
 							<div class="slide">
-								<img src="images/placeholders/940x425.gif" alt=""/>
+								<img src="images/placeholders/2010.gif" alt=""/>
 								<div class="description">
 									<h2 class="title">2010 Mercedes-Benz Sport</h2>
 									<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
-									<div class="price">$ 32 200</div>
+									<div class="price">$ 45 800</div>
 								</div>
 							</div>
 							<div class="slide">
-								<img src="images/placeholders/940x425.gif" alt=""/>
+								<img src="images/placeholders/2002.gif" alt=""/>
 								<div class="description">
 									<h2 class="title">2002 Subaru Impreza</h2>
 									<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
-									<div class="price">$ 32 200</div>
+									<div class="price">$ 25 500</div>
 								</div>
 							</div>
 							<div class="slide">
-								<img src="images/placeholders/940x425.gif" alt=""/>
+								<img src="images/placeholders/2012.gif" alt=""/>
 								<div class="description">
 									<h2 class="title">2012 Cadillac LaBaron</h2>
 									<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
-									<div class="price">$ 32 200</div>
+									<div class="price">$ 40 000</div>
 								</div>
 							</div>
 							<div class="slide">
-								<img src="images/placeholders/940x425.gif" alt=""/>
+								<img src="images/placeholders/550f.gif" alt=""/>
 								<div class="description">
 									<h2 class="title">2012 Ferrari Maranello 320</h2>
 									<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
-									<div class="price">$ 32 200</div>
+									<div class="price">$ 80 000</div>
 								</div>
 							</div>
 						</div>
