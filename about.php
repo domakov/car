@@ -5,83 +5,85 @@
 	include_once ('includes/head.php');
 	?>
 </head>
-<body class="index">
+<body class="not_found">
 	<!--BEGIN HEADER-->
+<<<<<<< HEAD:03_404.php
 		<?
 		include ('includes/header.php');
 		?>
+=======
+		<div id="header">
+			<div class="top_info">
+				<div class="logo">
+					<a href="#">Auto<span>Dealer</span></a>
+				</div>
+				<div class="header_contacts">
+					<div class="phone">+1 (800) 455-55-95</div>
+					<div>WinterJuice, LLC, 1875 South Grant Street, Suite 680, San Mateo, CA 94402</div>
+				</div>
+				<div class="socials">
+					<a href="#"><img src="images/fb_icon.png" alt=""></a>
+					<a href="#"><img src="images/twitter_icon.png" alt=""></a>
+					<a href="#"><img src="images/in_icon.png" alt=""></a>
+				</div>
+			</div>
+			<?
+				include_once("includes/menu.php")
+			?>
+					<div id="search_form">
+						<form method="get" action="#">
+							<input type="text" onblur="if(this.value=='') this.value='Search on site';" onfocus="if(this.value=='Search on site') this.value='';" value="Search on site" class="txb_search"/>
+							<input type="submit" value="Search" class="btn_search"/>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+>>>>>>> c6efdb5404547dcddc5f2720b8ce9dd5944e7b09:about.php
 	<!--EOF HEADER-->
 	<!--BEGIN CONTENT-->
 		<div id="content">
 			<div class="content">
-				<div class="wrapper_3">
-					<div class="left">
-						<h1><strong>About</strong> Us</h1>
-						<div class="blog">
-							<div class="blog_single_post">
-								<h4>Nulla ornare imperdiet elit morbi in erat sit amet nibh laoreet congue in vitae ante suspendisse stet imperdiet euismod suscipit imperdiet elit.</h4>
-								<div class="post">
-									<p>Lorem ipsum dolo stet consectet adipiscing elit. Vestibul dictum, nisi id vulputate ullamcoper lorem ipsum dolo st consectetur adipiscing elit. Vestibulu dictu, nisi id vulput ullamcoper lorem ipsum dolo stet. Vestibulu dictum, nisi id vulputate ullamcoper.</p>
-									<p>Lorem ipsum dolo stet consectet adipiscing elit. Vestibul dictum, nisi id vulputate ullamcoper lorem ipsum dolo st consectetur adipiscing elit. Vestibulu dictum, nisi vulputa ullamcoper lorem ipsum dolo stet. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum et dolo stet. Lorem ipsum dolo stet consectetur adipiscing elit. </p>
-									<div class="clear"></div>
-									<p>Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo st consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet. Vestibulu dictum, nisi vulputate ullamcoper lorem ipsum dolo stet consectetur adipiscing elit.  Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. </p>
-									<cite class="alignleft">Nulla ornare imperdiet elit morbi in erat sit amet nibh laoreet congue in vitae ante suspendisse stet imperdiet euismod suscipit imperdiet elit.</cite>
-									<p>Lorem ipsum dolo stet consectet adipiscing elit. Vestibul dictum, nisi id vulputate ullamcoper lorem ipsum dolo st consectetur adipiscing elit. Vestibulu dictu, nisi id vulput ullamcoper lorem ipsum dolo stet. Vestibulu dictum, nisi id vulputate ullamcoper.</p>
-									<div class="clear"></div>
-									<p>Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo st consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet. Vestibulu dictum, nisi vulputate ullamcoper lorem ipsum dolo stet consectetur adipiscing elit.  Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo ste. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet consectetur.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="right">
-						<div class="news">
-							<h2><strong>Auto</strong> news</h2>
-							<div class="news_box">
-								<a href="#" class="thumb">
-									<img src="images/placeholders/180x135.gif" alt=""/>
-								</a>
-								<h5><a href="#">UNOFFICIAL PORSCHE 918 SPYDER PRICING POPS UP</a></h5>
-								<div class="date">November 1, 2012 </div>
-								<div class="post">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... </p>
-								</div>
-							</div>
-							<div class="news_box bottom">
-								<a href="#" class="thumb">
-									<img src="images/placeholders/180x135.gif" alt=""/>
-								</a>
-								<h5><a href="#">UNOFFICIAL PORSCHE 918 SPYDER PRICING POPS UP</a></h5>
-								<div class="date">November 1, 2012 </div>
-								<div class="post">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... </p>
-								</div>
-							</div>
-							<div class="all_wrapper"><a href="#" class="all_news">All news</a></div>
-						</div>
-					</div>
-					<div class="clear"></div>
+				<div class="counter_heading">We’ll be here soon with a new website. Estimated time remaining:</div>
+				<div class="counter_wrapper">
+					<div id="counter"></div>
 				</div>
-				<div class="services">
-					<div class="service service_1">
-						<h2><strong>Delivery</strong> on time</h2>
-						<p>Lorem ipsum dolo stet consectetur adipiscin elit. Vestibulu dictum, vulputate ullamcoper lorem ipsum dolo stet.</p>
-						<a href="#" class="more">More</a>
+				<div class="newsletter">
+					<div class="title">We are building new? beautiful website. In the meantime, while here, you can use the form below to subscribe to our newsletter. </div>
+					<form method="get" action="#">
+						<input type="text" onblur="if(this.value=='') this.value='Your E-mail...';" onfocus="if(this.value=='Your E-mail...') this.value='';" value="Your E-mail..." class="txb"/>
+						<input type="submit" value="subscribe" class="btn_subscribe"/>
+					</form>
+				</div>
+				<div class="needs_wrapper">
+					<div class="post_block">
+						<h3><strong>What</strong> we have finished</h3>
+						<ul>
+							<li>The main website design</li>
+							<li>User database</li>
+							<li>Dynamic elements</li>
+						</ul>
 					</div>
-					<div class="service service_2 center">
-						<h2><strong>Quality</strong> service</h2>
-						<p>Lorem ipsum dolo stet consectetur adipiscin elit. Vestibulu dictum, vulputate ullamcoper lorem ipsum dolo stet.</p>
-						<a href="#" class="more">More</a>
+					<div class="post_block center">
+						<h3><strong>What</strong> we are working on</h3>
+						<ul>
+							<li>The main website design</li>
+							<li>User database</li>
+							<li>Dynamic elements</li>
+						</ul>
 					</div>
-					<div class="service service_3">
-						<h2><strong>Retro</strong> cars</h2>
-						<p>Lorem ipsum dolo stet consectetur adipiscin elit. Vestibulu dictum, vulputate ullamcoper lorem ipsum dolo stet.</p>
-						<a href="#" class="more">More</a>
+					<div class="post_block last">
+						<h3><strong>What</strong> we need to do</h3>
+						<ul>
+							<li>The main website design</li>
+							<li>User database</li>
+							<li>Dynamic elements</li>
+						</ul>
 					</div>
-				</div>		
+				</div>
 			</div>
 		</div>
 	<!--EOF CONTENT-->
-
 	<!--BEGIN FOOTER-->
 		<div id="footer">
 			<div class="bg_top_footer">
