@@ -1,9 +1,45 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<?
-	include_once ('includes/head.php')
-	?>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<!-- Facebook APP ID -->
+	<meta property="fb:app_id" content="12345"/>
+
+	<meta name="keywords" content="Car-Dealer, auto-salon, automobile, business, car, car-gallery, car-selling-template, cars, dealer, marketplace, mobile, real estate, responsive, sell, vehicle" />
+	<meta name="description" content="Auto Dealer HTML - Responsive HTML Auto Dealer Template" />
+
+	<!-- Open Graph -->
+	<meta property="og:site_name" content="Auto Dealer HTML"/>
+	<meta property="og:title" content="Contacts" />
+	<meta property="og:url" content="http://localhost/02_contacts.html" />
+	<meta property="og:image" content="http://cdn.winterjuice.com/example/autodealer/image.jpg" />
+	<meta property="og:description" content="Auto Dealer HTML - Responsive HTML Auto Dealer Template" />
+
+	<!-- Page Title -->
+	<title>Contacts</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/style980.css" />
+	<link rel="stylesheet" type="text/css" href="css/style800.css" />
+	<link rel="stylesheet" type="text/css" href="css/style700.css" />
+	<link rel="stylesheet" type="text/css" href="css/style600.css" />
+	<link rel="stylesheet" type="text/css" href="css/style500.css" />
+	<link rel="stylesheet" type="text/css" href="css/style400.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css" media="screen" />
+	<!--[if IE]>
+	<link href="css/style_ie.css" rel="stylesheet" type="text/css">
+	<![endif]-->
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.bxslider.js"></script>
+	<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="js/jquery.selectik.js"></script>
+	<script type="text/javascript" src="js/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
+	<script type="text/javascript" src="js/jquery.countdown.js"></script>
+	<script type="text/javascript" src="js/jquery.checkbox.js"></script>
+	<script type="text/javascript" src="js/js.js"></script>
 </head>
 <body class="contacts">
 	<!--BEGIN HEADER-->
@@ -24,15 +60,15 @@
 					<div class="contacts_box">
 						<div class="left">
 							<h3><strong>Contact</strong> details</h3>
-							<div class="addr detail">Berlin, Germany, nr. 250330,<br/>main street</div>
-							<div class="phones detail">0040 742 016 756<br/>0040 742 016 756</div>
-							<div class="email detail single_line"><a href="mailto:#" class="markered">office@autodealer.com</a></div>
-							<div class="web detail single_line"><a href="#">http://www.autodealer.com</a></div>
+							<div class="addr detail">Актобе, Казахстан<br/></div>
+							<div class="phones detail">+7 (7132) 562-051<br/>+7 (7132) 578 - 491</div>
+							<div class="email detail single_line"><a href="mailto:#" class="markered">info@apk-edu.kz</a></div>
+							<div class="web detail single_line"><a href="#">https://apk-edu.kz/</a></div>
 						</div>
 						<div class="map">
 							<div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
 		<div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
-        var setting = {"height":751,"width":803,"zoom":17,"queryString":"просп. Алии Молдагуловой 36, Актобе 030012, Казахстан","place_id":"ChIJ3XJezjIigkERNWEtRUG5iVc","satellite":true,"centerCoord":[50.28869954135061,57.149717486427484],"cid":"0xd51cbc5fb8879fbd","cityUrl":"/kazakhstan/aktobe-17438","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"105416"};
+        var setting = {"height":750,"width":700,"zoom":17,"queryString":"Актюбинский Высший Политехнический Колледж, улица Рыскулова, Актобе, Казахстан","place_id":"ChIJMaWq6zIigkEROim4YmqgYwk","satellite":true,"centerCoord":[50.28869954135061,57.149717486427484],"cid":"0x963a06a62b8293a","cityUrl":"/kazakhstan/aktobe-17438","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"105416"};
         var d = document;
         var s = d.createElement('script');
         s.src = 'https://1map.com/js/script-for-user.js?embed_id=105416';
@@ -163,7 +199,7 @@ Lorem ipsum dolor sit amet, con sectetur adipisicing elit, sed do eius  mod temp
 						<div class="f_contact f_contact_3"><strong>Email:</strong> <a href="mailto:#">testmail@sitename.com</a></div>
 					</div>
 					<div class="f_widget divide last frame_wrapper">
-						<iframe width="204" height="219" src="https://maps.google.com.ua/maps?f=q&amp;source=s_q&amp;hl=ruamp;hl=en&amp;geocode=&amp;q=%D0%9C%D0%B0%D0%BD%D1%85%D1%8D%D1%82%D1%82%D0%B5%D0%BD,+%D0%9D%D1%8C%D1%8E-%D0%99%D0%BE%D1%80%D0%BA,+%D0%A1%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5+%D0%A8%D1%82%D0%B0%D1%82%D1%8B+%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B8&amp;aq=0&amp;oq=%D0%BC%D0%B0%D0%BD%D1%85&amp;sll=48.382803,31.17461&amp;sspn=7.573826,21.643066&amp;ie=UTF8&amp;hq=&amp;hnear=%D0%9C%D0%B0%D0%BD%D1%85%D1%8D%D1%82%D1%82%D0%B5%D0%BD,+%D0%9D%D1%8C%D1%8E-%D0%99%D0%BE%D1%80%D0%BA,+%D0%9D%D1%8C%D1%8E+%D0%99%D0%BE%D1%80%D0%BA,+%D0%9D%D1%8C%D1%8E-%D0%99%D0%BE%D1%80%D0%BA,+%D0%A1%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D1%91%D0%BD%D0%BD%D1%8B%D0%B5+%D0%A8%D1%82%D0%B0%D1%82%D1%8B+%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B8&amp;t=m&amp;ll=40.79042,-73.959961&amp;spn=0.113849,0.139389&amp;z=11&amp;iwloc=A&amp;output=embed"></iframe>
+						<div style="overflow:hidden;width: 209px;position: relative;"><iframe width="209" height="214" src="https://maps.google.com/maps?width=209&amp;height=214&amp;hl=en&amp;q=%D0%90%D2%9B%D1%82%D3%A9%D0%B1%D0%B5%20%D0%9F%D0%BE%D0%BB%D0%B8%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0%D0%BB%D1%8B%D2%9B%20%D0%BA%D0%BE%D0%BB%D0%BB%D0%B5%D0%B4%D0%B6%D1%96+(%D0%9D%D0%B0%D0%B7%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)&amp;ie=UTF8&amp;t=&amp;z=10&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href="https://embedgooglemaps.com/ru/">https://embedgooglemaps.com/ru/</a> & <a href="https://iamsterdamcard.it">iamsterdam card.it</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><br />
 					</div>
 				</div>
 			</div>
