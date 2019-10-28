@@ -1,46 +1,9 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-	<!-- Facebook APP ID -->
-	<meta property="fb:app_id" content="12345"/>
-
-	<meta name="keywords" content="Car-Dealer, auto-salon, automobile, business, car, car-gallery, car-selling-template, cars, dealer, marketplace, mobile, real estate, responsive, sell, vehicle" />
-	<meta name="description" content="Auto Dealer HTML - Responsive HTML Auto Dealer Template" />
-
-	<!-- Open Graph -->
-	<meta property="og:site_name" content="Auto Dealer HTML"/>
-	<meta property="og:title" content="Blog" />
-	<meta property="og:url" content="http://localhost/08_blog.html" />
-	<meta property="og:image" content="http://cdn.winterjuice.com/example/autodealer/image.jpg" />
-	<meta property="og:description" content="Auto Dealer HTML - Responsive HTML Auto Dealer Template" />
-
-	<!-- Page Title -->
-	<title>Blog</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<link rel="stylesheet" type="text/css" href="css/style980.css" />
-	<link rel="stylesheet" type="text/css" href="css/style800.css" />
-	<link rel="stylesheet" type="text/css" href="css/style700.css" />
-	<link rel="stylesheet" type="text/css" href="css/style600.css" />
-	<link rel="stylesheet" type="text/css" href="css/style500.css" />
-	<link rel="stylesheet" type="text/css" href="css/style400.css" />
-	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css" media="screen" />
-	<!--[if IE]>
-	<link href="css/style_ie.css" rel="stylesheet" type="text/css">
-	<![endif]-->
-	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-	<script type="text/javascript" src="js/jquery.bxslider.js"></script>
-	<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
-	<script type="text/javascript" src="js/jquery.selectik.js"></script>
-	<script type="text/javascript" src="js/jquery.mousewheel-3.0.4.pack.js"></script>
-	<script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
-	<script type="text/javascript" src="js/jquery.countdown.js"></script>
-	<script type="text/javascript" src="js/jquery.checkbox.js"></script>
-	<script type="text/javascript" src="js/js.js"></script>
+	<?include_once ('includes/head.php');?>
 </head>
-<body class="blog_page">
+<body class="blog_page single">
 	<!--BEGIN HEADER-->
 		<div id="header">
 			<div class="top_info">
@@ -91,185 +54,140 @@
 				<div class="main_wrapper">
 					<h1><strong>Welcome</strong>  to our blog</h1>
 					<div class="blog">
-						<div class="blog_post">
-							<a href="#" class="thumb">
-								<img src="images/placeholders/180x180.gif" alt=""/>
-							</a>
-							<div class="blog_desc">
-								<h4><a href="#">Here comes the blog title</a></h4>
-								<div class="grey_area">
-									<a href="#" class="blog_date">November 1, 2012</a>
-									<a href="#" class="blog_author">Admin</a>
-									<div class="blog_category">
-										<a href="#" >Cars</a>, 
-										<a href="#" >vehicle</a>
-									</div>
-									<a href="#" class="blog_comments">7 Comments</a>
+						<div class="blog_single_post">
+							<h4>Here comes the blog title</h4>
+							<div class="grey_area">
+								<a href="#" class="blog_date">November 1, 2012</a>
+								<a href="#" class="blog_author">Admin</a>
+								<div class="blog_category">
+									<a href="#" >Cars</a>, 
+									<a href="#" >vehicle</a>
 								</div>
-								<div class="post">
-									<p>Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulput ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, ni id vulputate ullamcoper lorem ipsum dolo stet.</p>
-								</div>
-								<a href="#" class="more markered">Read more</a>
+								<a href="#" class="blog_comments">7 Comments</a>
+							</div>
+							<div class="post">
+								<img src="images/placeholders/312x248.gif" alt="" class="alignleft"/>
+								<p>Lorem ipsum dolo stet consectet adipiscing elit. Vestibul dictum, nisi id vulputate ullamcoper lorem ipsum dolo st consectetur adipiscing elit. Vestibulu dictu, nisi id vulput ullamcoper lorem ipsum dolo stet. Vestibulu dictum, nisi id vulputate ullamcoper.</p>
+								<p>Lorem ipsum dolo stet consectet adipiscing elit. Vestibul dictum, nisi id vulputate ullamcoper lorem ipsum dolo st consectetur adipiscing elit. Vestibulu dictum, nisi vulputa ullamcoper lorem ipsum dolo stet. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum et dolo stet. Lorem ipsum dolo stet consectetur adipiscing elit. </p>
+								<div class="clear"></div>
+								<p>Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo st consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet. Vestibulu dictum, nisi vulputate ullamcoper lorem ipsum dolo stet consectetur adipiscing elit.  Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. </p>
+								<cite class="alignleft">Nulla ornare imperdiet elit morbi in erat sit amet nibh laoreet congue in vitae ante suspendisse stet imperdiet euismod suscipit imperdiet elit.</cite>
+								<p>Lorem ipsum dolo stet consectet adipiscing elit. Vestibul dictum, nisi id vulputate ullamcoper lorem ipsum dolo st consectetur adipiscing elit. Vestibulu dictu, nisi id vulput ullamcoper lorem ipsum dolo stet. Vestibulu dictum, nisi id vulputate ullamcoper.</p>
+								<div class="clear"></div>
+								<p>Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo st consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet. Vestibulu dictum, nisi vulputate ullamcoper lorem ipsum dolo stet consectetur adipiscing elit.  Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo ste. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet consectetur.</p>
 							</div>
 						</div>
-						<div class="blog_post">
-							<a href="#" class="thumb">
-								<img src="images/placeholders/180x180.gif" alt=""/>
-							</a>
-							<div class="blog_desc">
-								<h4><a href="#">Here comes the blog title</a></h4>
-								<div class="grey_area">
-									<a href="#" class="blog_date">November 1, 2012</a>
-									<a href="#" class="blog_author">Admin</a>
-									<div class="blog_category">
-										<a href="#" >Cars</a>, 
-										<a href="#" >vehicle</a>
-									</div>
-									<a href="#" class="blog_comments">7 Comments</a>
-								</div>
-								<div class="post">
-									<p>Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulput ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, ni id vulputate ullamcoper lorem ipsum dolo stet.</p>
-								</div>
-								<a href="#" class="more markered">Read more</a>
-							</div>
-						</div>
-						<div class="blog_post">
-							<a href="#" class="thumb">
-								<img src="images/placeholders/180x180.gif" alt=""/>
-							</a>
-							<div class="blog_desc">
-								<h4><a href="#">Here comes the blog title</a></h4>
-								<div class="grey_area">
-									<a href="#" class="blog_date">November 1, 2012</a>
-									<a href="#" class="blog_author">Admin</a>
-									<div class="blog_category">
-										<a href="#" >Cars</a>, 
-										<a href="#" >vehicle</a>
-									</div>
-									<a href="#" class="blog_comments">7 Comments</a>
-								</div>
-								<div class="post">
-									<p>Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulput ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, ni id vulputate ullamcoper lorem ipsum dolo stet.</p>
-								</div>
-								<a href="#" class="more markered">Read more</a>
-							</div>
-						</div>
-						<div class="blog_post">
-							<a href="#" class="thumb">
-								<img src="images/placeholders/180x180.gif" alt=""/>
-							</a>
-							<div class="blog_desc">
-								<h4><a href="#">Here comes the blog title</a></h4>
-								<div class="grey_area">
-									<a href="#" class="blog_date">November 1, 2012</a>
-									<a href="#" class="blog_author">Admin</a>
-									<div class="blog_category">
-										<a href="#" >Cars</a>, 
-										<a href="#" >vehicle</a>
-									</div>
-									<a href="#" class="blog_comments">7 Comments</a>
-								</div>
-								<div class="post">
-									<p>Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulput ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, ni id vulputate ullamcoper lorem ipsum dolo stet.</p>
-								</div>
-								<a href="#" class="more markered">Read more</a>
-							</div>
-						</div>
-						<div class="blog_post">
-							<a href="#" class="thumb">
-								<img src="images/placeholders/180x180.gif" alt=""/>
-							</a>
-							<div class="blog_desc">
-								<h4><a href="#">Here comes the blog title</a></h4>
-								<div class="grey_area">
-									<a href="#" class="blog_date">November 1, 2012</a>
-									<a href="#" class="blog_author">Admin</a>
-									<div class="blog_category">
-										<a href="#" >Cars</a>, 
-										<a href="#" >vehicle</a>
-									</div>
-									<a href="#" class="blog_comments">7 Comments</a>
-								</div>
-								<div class="post">
-									<p>Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulput ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, ni id vulputate ullamcoper lorem ipsum dolo stet.</p>
-								</div>
-								<a href="#" class="more markered">Read more</a>
-							</div>
-						</div>
-						<div class="blog_post">
-							<a href="#" class="thumb">
-								<img src="images/placeholders/180x180.gif" alt=""/>
-							</a>
-							<div class="blog_desc">
-								<h4><a href="#">Here comes the blog title</a></h4>
-								<div class="grey_area">
-									<a href="#" class="blog_date">November 1, 2012</a>
-									<a href="#" class="blog_author">Admin</a>
-									<div class="blog_category">
-										<a href="#" >Cars</a>, 
-										<a href="#" >vehicle</a>
-									</div>
-									<a href="#" class="blog_comments">7 Comments</a>
-								</div>
-								<div class="post">
-									<p>Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulput ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, ni id vulputate ullamcoper lorem ipsum dolo stet.</p>
-								</div>
-								<a href="#" class="more markered">Read more</a>
-							</div>
-						</div>
-						<div class="blog_post">
-							<a href="#" class="thumb">
-								<img src="images/placeholders/180x180.gif" alt=""/>
-							</a>
-							<div class="blog_desc">
-								<h4><a href="#">Here comes the blog title</a></h4>
-								<div class="grey_area">
-									<a href="#" class="blog_date">November 1, 2012</a>
-									<a href="#" class="blog_author">Admin</a>
-									<div class="blog_category">
-										<a href="#" >Cars</a>, 
-										<a href="#" >vehicle</a>
-									</div>
-									<a href="#" class="blog_comments">7 Comments</a>
-								</div>
-								<div class="post">
-									<p>Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulput ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, ni id vulputate ullamcoper lorem ipsum dolo stet.</p>
-								</div>
-								<a href="#" class="more markered">Read more</a>
-							</div>
-						</div>
-						<div class="blog_post">
-							<a href="#" class="thumb">
-								<img src="images/placeholders/180x180.gif" alt=""/>
-							</a>
-							<div class="blog_desc">
-								<h4><a href="#">Here comes the blog title</a></h4>
-								<div class="grey_area">
-									<a href="#" class="blog_date">November 1, 2012</a>
-									<a href="#" class="blog_author">Admin</a>
-									<div class="blog_category">
-										<a href="#" >Cars</a>, 
-										<a href="#" >vehicle</a>
-									</div>
-									<a href="#" class="blog_comments">7 Comments</a>
-								</div>
-								<div class="post">
-									<p>Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulput ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, ni id vulputate ullamcoper lorem ipsum dolo stet.</p>
-								</div>
-								<a href="#" class="more markered">Read more</a>
-							</div>
-						</div>
-						<div class="pagination">
+						<div class="comments">
+							<h4>Comments</h4>
 							<ul>
-								<li class="active"><a href="#">1</a></li>
-								<li><a href="#">2</a></li>
-								<li><a href="#">3</a></li>
-								<li class="space">...</li>
-								<li><a href="#">8</a></li>
-								<li class="next"><a href="#"><img src="images/page_next.gif" alt=""/></a></li>
+								<li class="first">
+									<div class="wrapper">
+										<img src="images/placeholders/61x61.gif" alt=""/>
+										<div class="comment_data">
+											<div class="comment_author">
+												<div class="author">John Doe</div>
+												<div class="date">November 1, 2012 </div>
+											</div>
+											<div class="comment">Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum.</div>
+										</div>
+										<div class="clear"></div>
+									</div>
+									<ul>
+										<li>
+											<div class="wrapper">
+												<img src="images/placeholders/61x61.gif" alt=""/>
+												<div class="comment_data">
+													<div class="comment_author">
+														<div class="author">John Doe</div>
+														<div class="date">November 1, 2012 </div>
+													</div>
+													<div class="comment">Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet. </div>
+												</div>
+												<div class="clear"></div>
+											</div>
+											<ul>
+												<li>
+													<div class="wrapper">
+														<img src="images/placeholders/61x61.gif" alt=""/>
+														<div class="comment_data">
+															<div class="comment_author">
+																<div class="author">John Doe</div>
+																<div class="date">November 1, 2012 </div>
+																<a href="#" class="reply">Reply</a>
+															</div>
+															<div class="comment">Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper. </div>
+														</div>
+														<div class="clear"></div>
+													</div>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<div class="wrapper">
+										<img src="images/placeholders/61x61.gif" alt=""/>
+										<div class="comment_data">
+											<div class="comment_author">
+												<div class="author">John Doe</div>
+												<div class="date">November 1, 2012 </div>
+											</div>
+											<div class="comment">Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum.</div>
+										</div>
+										<div class="clear"></div>
+									</div>
+									<ul>
+										<li>
+											<div class="wrapper">
+												<img src="images/placeholders/61x61.gif" alt=""/>
+												<div class="comment_data">
+													<div class="comment_author">
+														<div class="author">John Doe</div>
+														<div class="date">November 1, 2012 </div>
+													</div>
+													<div class="comment">Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet. </div>
+												</div>
+												<div class="clear"></div>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<li class="last">
+									<div class="wrapper">
+										<img src="images/placeholders/61x61.gif" alt=""/>
+										<div class="comment_data">
+											<div class="comment_author">
+												<div class="author">John Doe</div>
+												<div class="date">November 1, 2012 </div>
+											</div>
+											<div class="comment">Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum.</div>
+										</div>
+										<div class="clear"></div>
+									</div>
+								</li>
 							</ul>
 						</div>
-						<div class="clear"></div>
+						<div class="comment_form">
+							<h2><strong>Leave</strong> a comment</h2>
+							<form method="get" action="#">
+								<div class="fld_box">
+									<label>Name: </label>
+									<input type="text" value=""/>
+								</div>
+								<div class="fld_box center">
+									<label>E-mail: </label>
+									<input type="text" value=""/>
+								</div>
+								<div class="fld_box">
+									<label>Website: </label>
+									<input type="text" value=""/>
+								</div>
+								<div class="clear"></div>
+								<label>Comment: </label>
+								<textarea cols="20" rows="20"></textarea>
+								<input type="submit" value="submit" class="submit"/>
+							</form>
+						</div>
 					</div>
 					<div class="sidebar">
 						<div class="widget">
@@ -399,7 +317,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="clear mb1"></div>
+					<div class="clear"></div>
 				</div>
 			</div>
 		</div>
