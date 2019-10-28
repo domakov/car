@@ -22,19 +22,9 @@
 					<a href="#"><img src="images/in_icon.png" alt=""></a>
 				</div>
 			</div>
-			<div class="bg_navigation">
-				<div class="navigation_wrapper">
-					<div id="navigation">
-						<span>Home</span>
-						<ul>
-							<li class="current"><a href="../index.php">Home</a></li>
-							<li><a href="#">About Us</a></li>
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">News</a></li>
-							<li><a href="#">For Salers</a></li>
-							<li><a href="#">Contacts</a></li>
-						</ul>
-		</div>
+			<?
+				include_once("includes/menu.php")
+			?>
 					</div>
 					<div id="search_form">
 						<form method="get" action="#">
