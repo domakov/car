@@ -1,44 +1,9 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-	<!-- Facebook APP ID -->
-	<meta property="fb:app_id" content="12345"/>
-
-	<meta name="keywords" content="Car-Dealer, auto-salon, automobile, business, car, car-gallery, car-selling-template, cars, dealer, marketplace, mobile, real estate, responsive, sell, vehicle" />
-	<meta name="description" content="Auto Dealer HTML - Responsive HTML Auto Dealer Template" />
-
-	<!-- Open Graph -->
-	<meta property="og:site_name" content="Auto Dealer HTML"/>
-	<meta property="og:title" content="Gallery" />
-	<meta property="og:url" content="http://localhost/12_gallery.html" />
-	<meta property="og:image" content="http://cdn.winterjuice.com/example/autodealer/image.jpg" />
-	<meta property="og:description" content="Auto Dealer HTML - Responsive HTML Auto Dealer Template" />
-
-	<!-- Page Title -->
-	<title>Page</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<link rel="stylesheet" type="text/css" href="css/style980.css" />
-	<link rel="stylesheet" type="text/css" href="css/style800.css" />
-	<link rel="stylesheet" type="text/css" href="css/style700.css" />
-	<link rel="stylesheet" type="text/css" href="css/style600.css" />
-	<link rel="stylesheet" type="text/css" href="css/style500.css" />
-	<link rel="stylesheet" type="text/css" href="css/style400.css" />
-	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css" media="screen" />
-	<!--[if IE]>
-	<link href="css/style_ie.css" rel="stylesheet" type="text/css">
-	<![endif]-->
-	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-	<script type="text/javascript" src="js/jquery.bxslider.js"></script>
-	<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
-	<script type="text/javascript" src="js/jquery.selectik.js"></script>
-	<script type="text/javascript" src="js/jquery.mousewheel-3.0.4.pack.js"></script>
-	<script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
-	<script type="text/javascript" src="js/jquery.countdown.js"></script>
-	<script type="text/javascript" src="js/jquery.checkbox.js"></script>
-	<script type="text/javascript" src="js/js.js"></script>
+	<?
+	include_once ('includes/head.php')
+	?>
 </head>
 <body class="index">
 	<!--BEGIN HEADER-->
@@ -95,35 +60,35 @@
 								</div>
 							</div>
 							<div class="slide">
-								<img src="images/placeholders/940x425.gif" alt=""/>
+								<img src="images/placeholders/2010.gif" alt=""/>
 								<div class="description">
 									<h2 class="title">2010 Mercedes-Benz Sport</h2>
 									<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
-									<div class="price">$ 32 200</div>
+									<div class="price">$ 45 800</div>
 								</div>
 							</div>
 							<div class="slide">
-								<img src="images/placeholders/940x425.gif" alt=""/>
+								<img src="images/placeholders/2002.gif" alt=""/>
 								<div class="description">
 									<h2 class="title">2002 Subaru Impreza</h2>
 									<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
-									<div class="price">$ 32 200</div>
+									<div class="price">$ 25 500</div>
 								</div>
 							</div>
 							<div class="slide">
-								<img src="images/placeholders/940x425.gif" alt=""/>
+								<img src="images/placeholders/2012.gif" alt=""/>
 								<div class="description">
 									<h2 class="title">2012 Cadillac LaBaron</h2>
 									<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
-									<div class="price">$ 32 200</div>
+									<div class="price">$ 40 000</div>
 								</div>
 							</div>
 							<div class="slide">
-								<img src="images/placeholders/940x425.gif" alt=""/>
+								<img src="images/placeholders/550f.gif" alt=""/>
 								<div class="description">
 									<h2 class="title">2012 Ferrari Maranello 320</h2>
 									<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
-									<div class="price">$ 32 200</div>
+									<div class="price">$ 80 000</div>
 								</div>
 							</div>
 						</div>
@@ -215,9 +180,9 @@
 									<a href="#">
 										<img src="images/placeholders/220x164.gif" alt=""/>
 										<div class="description">Registration 2010<br/>3.0 Diesel<br/>230 HP<br/>Body Coupe<br/>80 000 Miles</div>
-										<div class="title">Mercedes-Benz <span class="price">$ 115 265</span></div>
-									</a>
-								</li>
+										<div class="title">Mercedes-Benz <span class="price">$ 115 265</
+
+											
 							</ul>
 						</div>
 					</div>

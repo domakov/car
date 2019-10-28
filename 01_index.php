@@ -29,7 +29,7 @@
 						<ul>
 							<li class="current"><a href="#">Home</a></li>
 							<li><a href="#">About Us</a></li>
-							<li><a href="#">Blog</a></li>
+							<li><a href="OSPanel/domanis/git.hub/08_blog.php">Blog</a></li>
 							<li><a href="#">News</a></li>
 							<li><a href="#">For Salers</a></li>
 							<li><a href="#">Contacts</a></li>
