@@ -6,6 +6,7 @@
 <body>
 	<?
 		echo "car.git";
+		echo "car.git Almas & Nursat";
 	?>
 
 </body>
