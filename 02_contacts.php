@@ -1,45 +1,9 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-	<!-- Facebook APP ID -->
-	<meta property="fb:app_id" content="12345"/>
-
-	<meta name="keywords" content="Car-Dealer, auto-salon, automobile, business, car, car-gallery, car-selling-template, cars, dealer, marketplace, mobile, real estate, responsive, sell, vehicle" />
-	<meta name="description" content="Auto Dealer HTML - Responsive HTML Auto Dealer Template" />
-
-	<!-- Open Graph -->
-	<meta property="og:site_name" content="Auto Dealer HTML"/>
-	<meta property="og:title" content="Contacts" />
-	<meta property="og:url" content="http://localhost/02_contacts.html" />
-	<meta property="og:image" content="http://cdn.winterjuice.com/example/autodealer/image.jpg" />
-	<meta property="og:description" content="Auto Dealer HTML - Responsive HTML Auto Dealer Template" />
-
-	<!-- Page Title -->
-	<title>Contacts</title>
-
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<link rel="stylesheet" type="text/css" href="css/style980.css" />
-	<link rel="stylesheet" type="text/css" href="css/style800.css" />
-	<link rel="stylesheet" type="text/css" href="css/style700.css" />
-	<link rel="stylesheet" type="text/css" href="css/style600.css" />
-	<link rel="stylesheet" type="text/css" href="css/style500.css" />
-	<link rel="stylesheet" type="text/css" href="css/style400.css" />
-	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css" media="screen" />
-	<!--[if IE]>
-	<link href="css/style_ie.css" rel="stylesheet" type="text/css">
-	<![endif]-->
-	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-	<script type="text/javascript" src="js/jquery.bxslider.js"></script>
-	<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
-	<script type="text/javascript" src="js/jquery.selectik.js"></script>
-	<script type="text/javascript" src="js/jquery.mousewheel-3.0.4.pack.js"></script>
-	<script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
-	<script type="text/javascript" src="js/jquery.countdown.js"></script>
-	<script type="text/javascript" src="js/jquery.checkbox.js"></script>
-	<script type="text/javascript" src="js/js.js"></script>
+	<?
+	include_once ('includes/head.php')
+	?>
 </head>
 <body class="contacts">
 	<!--BEGIN HEADER-->
@@ -100,7 +64,19 @@
 							<div class="web detail single_line"><a href="#">http://www.autodealer.com</a></div>
 						</div>
 						<div class="map">
-							<img src="images/pics/map.jpg" alt=""/>
+							<div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+		<div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+        var setting = {"height":751,"width":803,"zoom":17,"queryString":"просп. Алии Молдагуловой 36, Актобе 030012, Казахстан","place_id":"ChIJ3XJezjIigkERNWEtRUG5iVc","satellite":true,"centerCoord":[50.28869954135061,57.149717486427484],"cid":"0xd51cbc5fb8879fbd","cityUrl":"/kazakhstan/aktobe-17438","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"105416"};
+        var d = document;
+        var s = d.createElement('script');
+        s.src = 'https://1map.com/js/script-for-user.js?embed_id=105416';
+        s.async = true;
+        s.onload = function (e) {
+          window.OneMap.initMap(setting)
+        };
+        var to = d.getElementsByTagName('script')[0];
+        to.parentNode.insertBefore(s, to);
+      })();</script><a href="https://1map.com/map-embed?embed_id=105416">1map.com</a></div>
 							<!--<iframe width="668" height="288" src="https://maps.google.com.ua/maps?f=q&amp;source=s_q&amp;hl=ruamp;hl=en&amp;geocode=&amp;q=%D0%9C%D0%B0%D0%BD%D1%85%D1%8D%D1%82%D1%82%D0%B5%D0%BD,+%D0%9D%D1%8C%D1%8E-%D0%99%D0%BE%D1%80%D0%BA,+%D0%A1%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5+%D0%A8%D1%82%D0%B0%D1%82%D1%8B+%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B8&amp;aq=0&amp;oq=%D0%BC%D0%B0%D0%BD&amp;sll=46.933064,32.007997&amp;sspn=0.243347,0.676346&amp;ie=UTF8&amp;hq=&amp;hnear=%D0%9C%D0%B0%D0%BD%D1%85%D1%8D%D1%82%D1%82%D0%B5%D0%BD,+%D0%9D%D1%8C%D1%8E-%D0%99%D0%BE%D1%80%D0%BA,+%D0%9D%D1%8C%D1%8E+%D0%99%D0%BE%D1%80%D0%BA,+%D0%9D%D1%8C%D1%8E-%D0%99%D0%BE%D1%80%D0%BA,+%D0%A1%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D1%91%D0%BD%D0%BD%D1%8B%D0%B5+%D0%A8%D1%82%D0%B0%D1%82%D1%8B+%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B8&amp;t=m&amp;ll=40.79042,-73.959961&amp;spn=0.14972,0.457993&amp;z=11&amp;iwloc=A&amp;output=embed"></iframe>-->
 						</div>
 					</div>
