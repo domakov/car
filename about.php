@@ -27,13 +27,14 @@
 					<div id="navigation">
 						<span>Home</span>
 						<ul>
-							<li class="current"><a href="#">Home</a></li>
+							<li class="current"><a href="../index.php">Home</a></li>
 							<li><a href="#">About Us</a></li>
 							<li><a href="#">Blog</a></li>
 							<li><a href="#">News</a></li>
 							<li><a href="#">For Salers</a></li>
 							<li><a href="#">Contacts</a></li>
 						</ul>
+		</div>
 					</div>
 					<div id="search_form">
 						<form method="get" action="#">
