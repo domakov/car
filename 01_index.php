@@ -10,7 +10,7 @@
 		<div id="header">
 			<div class="top_info">
 				<div class="logo">
-					<a href="#">Auto<span>Dealer</span></a>
+					<a href="#"><img src="images/logo_logo.png" alt=""></a>
 				</div>
 				<div class="header_contacts">
 					<div class="phone">+1 (800) 455-55-95</div>
