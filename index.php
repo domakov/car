@@ -10,26 +10,7 @@
 		<?
 		include ('includes/header.php');
 		?>
-		<div id="header">
-			<div class="top_info">
-				<div class="logo">
-					<a href="#">Auto<span>Dealer</span></a>
-				</div>
-				<div class="header_contacts">
-					<div class="phone">+1 (800) 455-55-95</div>
-					<div>WinterJuice, LLC, 1875 South Grant Street, Suite 680, San Mateo, CA 94402</div>
-				</div>
-				<div class="socials">
-					<a href="#"><img src="images/fb_icon.png" alt=""></a>
-					<a href="#"><img src="images/twitter_icon.png" alt=""></a>
-					<a href="#"><img src="images/in_icon.png" alt=""></a>
-				</div>
-			</div>
-			<?
-				include_once ("includes/menu.php");
-			?>
-			</div>
->>>>>>> c6efdb5404547dcddc5f2720b8ce9dd5944e7b09
+		
 	<!--EOF HEADER-->
 	<!--BEGIN CONTENT-->
 		<div id="content">
