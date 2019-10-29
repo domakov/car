@@ -22,7 +22,7 @@
 								<div class="slide">
 									<img src="images/placeholders/620x425.gif" alt=""/>
 									<div class="description">
-										<h2 class="title">2012 Mercedes-Benz CLS 320</h2>
+										<h2 class="tit  CLS 320</h2>
 										<p class="desc"><span><strong>Miles: </strong>8,025</span><span><strong>Engine: </strong>2.0</span></p>
 										<div class="price">$ 19 999</div>
 									</div>

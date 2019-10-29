@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<?
@@ -28,7 +28,7 @@
 									</div>
 								</div>
 								<div class="slide">
-									<img src="images/placeholders/620x425.gif" alt=""/>
+									<img src="https://www.automobile-propre.com/wp-content/uploads/2015/09/tesla-model-s-autopartage_05-620x425.jpg" alt=""/>
 									<div class="description">
 										<h2 class="title">2010 Mercedes-Benz Sport</h2>
 										<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
@@ -36,7 +36,7 @@
 									</div>
 								</div>
 								<div class="slide">
-									<img src="images/placeholders/620x425.gif" alt=""/>
+									<img src="https://motioncars.inquirer.net/files/2019/06/mercedes-cla-35-shooting-brake-02-620x425.jpg" alt=""/>
 									<div class="description">
 										<h2 class="title">2002 Subaru Impreza</h2>
 										<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
@@ -44,7 +44,7 @@
 									</div>
 								</div>
 								<div class="slide">
-									<img src="images/placeholders/620x425.gif" alt=""/>
+									<img src="https://autophorie.de/wp-content/uploads/2019/04/2019-mercedes-cla-220d-coupe-digitalweiss-amg-line-4-620x425.jpg" alt=""/>
 									<div class="description">
 										<h2 class="title">2012 Cadillac LaBaron</h2>
 										<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
@@ -52,7 +52,7 @@
 									</div>
 								</div>
 								<div class="slide">
-									<img src="images/placeholders/620x425.gif" alt=""/>
+									<img src="https://mana.su/wp-content/uploads/2017/08/bmw-i3-2018-goda-novoe-pokolenie-elektromobilya-6-620x425.jpg" alt=""/>
 									<div class="description">
 										<h2 class="title">2012 Ferrari Maranello 320</h2>
 										<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
