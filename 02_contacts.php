@@ -2,22 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
+
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-	<!-- Facebook APP ID -->
+	
 	<meta property="fb:app_id" content="12345"/>
 
 	<meta name="keywords" content="Car-Dealer, auto-salon, automobile, business, car, car-gallery, car-selling-template, cars, dealer, marketplace, mobile, real estate, responsive, sell, vehicle" />
 	<meta name="description" content="Auto Dealer HTML - Responsive HTML Auto Dealer Template" />
 
-	<!-- Open Graph -->
+
 	<meta property="og:site_name" content="Auto Dealer HTML"/>
 	<meta property="og:title" content="Contacts" />
 	<meta property="og:url" content="http://localhost/02_contacts.html" />
 	<meta property="og:image" content="http://cdn.winterjuice.com/example/autodealer/image.jpg" />
 	<meta property="og:description" content="Auto Dealer HTML - Responsive HTML Auto Dealer Template" />
 
-	<!-- Page Title -->
+
 	<title>Contacts</title>
 
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -28,9 +29,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style500.css" />
 	<link rel="stylesheet" type="text/css" href="css/style400.css" />
 	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css" media="screen" />
-	<!--[if IE]>
-	<link href="css/style_ie.css" rel="stylesheet" type="text/css">
-	<![endif]-->
+
 	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="js/jquery.bxslider.js"></script>
@@ -43,7 +42,7 @@
 	<script type="text/javascript" src="js/js.js"></script>
 </head>
 <body class="contacts">
-	<!--BEGIN HEADER-->
+
 		<div id="header">
 			
 			
@@ -51,16 +50,19 @@
 
 	<?
 	include_once("includes/head.php");
+?>
+<?
+	include_once ('includes/head.php')
+
 	?>
 </head>
 <body class="contacts">
-	<!--BEGIN HEADER-->
+	
 		<?
 		include ('includes/header.php');
 		?>
 
-	<!--EOF HEADER-->
-	<!--BEGIN CONTENT-->
+
 		<div id="content">
 			<div class="content">
 				<div class="breadcrumbs">
@@ -160,8 +162,7 @@
 				</div>
 			</div>
 		</div>
-	<!--EOF CONTENT-->
-	<!--BEGIN FOOTER-->
+
 		<div id="footer">
 			<div class="bg_top_footer">
 				<div class="top_footer">
@@ -258,6 +259,6 @@
 				<div class="copyright">&copy; 2013 Auto Sale. All Rights Reserved.</div>
 			</div>
 		</div>
-	<!--EOF FOOTER-->
+	
 </body>
 </html>
