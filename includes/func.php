@@ -17,8 +17,6 @@ function getImages($id){
 }
 function advertAll(){
     $sql="SELECT * FROM advert 
-			INNER JOIN marca on
-			advert.marca_id=marca.marca_id
 			INNER JOIN volume on
 			advert.volume_id=volume.volume_id
 			INNER JOIN oil on
@@ -27,8 +25,11 @@ function advertAll(){
 			advert.type_id=typekyzov.id
 			INNER JOIN images ON
 			advert.id=images.advert_id
-			limit 10
-			";
+			INNER JOIN model ON
+			advert.model_id=model.id
+			INNER JOIN marca on
+			model.marca_id=marca.marca_id
+			limit 10";
  return queryEasy ($sql);
 
 }
