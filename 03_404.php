@@ -151,6 +151,6 @@ Lorem ipsum dolor sit amet, con sectetur adipisicing elit, sed do eius  mod temp
 				<div class="copyright">&copy; 2013 Auto Sale. All Rights Reserved.</div>
 			</div>
 		</div>
-	<!--EOF FOOTER-->
+	
 </body>
 </html>
