@@ -18,12 +18,12 @@
 					<div id="navigation">
 						<span>Home</span>
 						<ul>
-							<li class="current"><a href="#">Home</a></li>
-							<li><a href="#">About Us</a></li>
-							<li><a href="OSPanel/domanis/git.hub/08_blog.php">Blog</a></li>
+							<li class="current"><a href="../index.php">Home</a></li>
+							<li><a href="../about.php">About Us</a></li>
+							<li><a href="../blog.php">Blog</a></li>
 							<li><a href="#">News</a></li>
 							<li><a href="#">For Salers</a></li>
-							<li><a href="#">Contacts</a></li>
+							<li><a href="../contact.php">Contacts</a></li>
 						</ul>
 					</div>
 					<div id="search_form">
