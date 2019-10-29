@@ -27,46 +27,17 @@ $adverts=advertAll();
 					<div class="slider_wrapper">
 						<div class="home_slider">
 							<div class="slider slider_1">
+								<?foreach ($adverts as $adv) {?>
 								<div class="slide">
-									<img src="images/placeholders/620x425.gif" alt=""/>
+									<img src="<?=$adv['link']?>" alt=""/>
 									<div class="description">
-										<h2 class="title">2012 Mercedes-Benz CLS 320</h2>
-										<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
-										<div class="price">$ 32 200</div>
+										<h2 class="title"><?echo $adv['year']." "; echo $adv['marca']." "; echo $adv['model'];?> </h2>
+										<p class="desc"><span><strong>Kilometr: </strong><?=$adv['probeg']?></span><span><strong>Engine: </strong><?=$adv['volume']?></span></p>
+										<div class="price">$ <?=$adv['price']?></div>
 									</div>
 								</div>
-								<div class="slide">
-									<img src="images/placeholders/620x425.gif" alt=""/>
-									<div class="description">
-										<h2 class="title">2010 Mercedes-Benz Sport</h2>
-										<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
-										<div class="price">$ 32 200</div>
-									</div>
-								</div>
-								<div class="slide">
-									<img src="images/placeholders/620x425.gif" alt=""/>
-									<div class="description">
-										<h2 class="title">2002 Subaru Impreza</h2>
-										<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
-										<div class="price">$ 32 200</div>
-									</div>
-								</div>
-								<div class="slide">
-									<img src="images/placeholders/620x425.gif" alt=""/>
-									<div class="description">
-										<h2 class="title">2012 Cadillac LaBaron</h2>
-										<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
-										<div class="price">$ 32 200</div>
-									</div>
-								</div>
-								<div class="slide">
-									<img src="images/placeholders/620x425.gif" alt=""/>
-									<div class="description">
-										<h2 class="title">2012 Ferrari Maranello 320</h2>
-										<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
-										<div class="price">$ 32 200</div>
-									</div>
-								</div>
+								<?}?>
+								
 							</div>
 						</div>
 					</div>
