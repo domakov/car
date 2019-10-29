@@ -1,17 +1,68 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	
+	<meta property="fb:app_id" content="12345"/>
+
+	<meta name="keywords" content="Car-Dealer, auto-salon, automobile, business, car, car-gallery, car-selling-template, cars, dealer, marketplace, mobile, real estate, responsive, sell, vehicle" />
+	<meta name="description" content="Auto Dealer HTML - Responsive HTML Auto Dealer Template" />
+
+
+	<meta property="og:site_name" content="Auto Dealer HTML"/>
+	<meta property="og:title" content="Contacts" />
+	<meta property="og:url" content="http://localhost/02_contacts.html" />
+	<meta property="og:image" content="http://cdn.winterjuice.com/example/autodealer/image.jpg" />
+	<meta property="og:description" content="Auto Dealer HTML - Responsive HTML Auto Dealer Template" />
+
+
+	<title>Contacts</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/style980.css" />
+	<link rel="stylesheet" type="text/css" href="css/style800.css" />
+	<link rel="stylesheet" type="text/css" href="css/style700.css" />
+	<link rel="stylesheet" type="text/css" href="css/style600.css" />
+	<link rel="stylesheet" type="text/css" href="css/style500.css" />
+	<link rel="stylesheet" type="text/css" href="css/style400.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css" media="screen" />
+
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.bxslider.js"></script>
+	<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="js/jquery.selectik.js"></script>
+	<script type="text/javascript" src="js/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
+	<script type="text/javascript" src="js/jquery.countdown.js"></script>
+	<script type="text/javascript" src="js/jquery.checkbox.js"></script>
+	<script type="text/javascript" src="js/js.js"></script>
+</head>
+<body class="contacts">
+
+		<div id="header">
+			
+			
+		</div>
+
+	<?
+	include_once("includes/head.php");
+?>
 <?
 	include_once ('includes/head.php')
+
 	?>
 </head>
 <body class="contacts">
-	<!--BEGIN HEADER-->
+	
 		<?
 		include ('includes/header.php');
 		?>
-	<!--EOF HEADER-->
-	<!--BEGIN CONTENT-->
+
+
 		<div id="content">
 			<div class="content">
 				<div class="breadcrumbs">
@@ -111,8 +162,7 @@
 				</div>
 			</div>
 		</div>
-	<!--EOF CONTENT-->
-	<!--BEGIN FOOTER-->
+
 		<div id="footer">
 			<div class="bg_top_footer">
 				<div class="top_footer">
@@ -120,7 +170,7 @@
 						<h3><strong>About</strong> us</h3>
 						<a href="#" class="footer_logo">AutoDealer</a>
 						<p>Lorem ipsum dolor sit amet, cons ectetur adipisicing elit, sed do eiusmod tempor.
-Lorem ipsum dolor sit amet, con sectetur adipisicing elit, sed do eius  mod tempor incididunt ut.</p>
+						   Lorem ipsum dolor sit amet, con sectetur adipisicing elit, sed do eius  mod tempor incididunt ut.</p>
 					</div>
 					<div class="f_widget divide second">
 						<h3><strong>Open</strong> hours</h3>
@@ -209,6 +259,6 @@ Lorem ipsum dolor sit amet, con sectetur adipisicing elit, sed do eius  mod temp
 				<div class="copyright">&copy; 2013 Auto Sale. All Rights Reserved.</div>
 			</div>
 		</div>
-	<!--EOF FOOTER-->
+	
 </body>
 </html>
