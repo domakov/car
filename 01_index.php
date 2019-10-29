@@ -228,8 +228,8 @@
 					<div class="recent_carousel">
 						<div class="slide">
 							<a href="#">
-								<img src="images/placeholders/220x164.gif" alt=""/>
-								<div class="description">Registration 2010<br/>3.0 Diesel<br/>230 HP<br/>Body Coupe<br/>80 000 Miles</div>
+								<img src="https://cdn2.autoexpress.co.uk/sites/autoexpressuk/files/2019/09/image_from_ios_9.jpg" alt=""/>
+								<div class="description">Registration 2019<br/>3.0 Diesel<br/>230 HP<br/>Body Coupe<br/>80 000 Miles</div>
 								<div class="title">Mercedes-Benz <span class="price">$ 115 265</span></div>
 							</a>
 						</div>
@@ -578,12 +578,12 @@
 								</div>
 								<div class="news_box bottom">
 									<a href="#" class="thumb">
-										<img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Ray_Baldwin_Subaru_Stamford_NY_Auto_Show_066.JPG" alt=""/>
+										<img src="https://s3-prod.autonews.com/s3fs-public/styles/width_792/public/Porsche-MAIN_i.jpg" alt=""/>
 									</a>
-									<h5><a href="#">UNOFFICIAL PORSCHE 918 SPYDER PRICING POPS UP</a></h5>
-									<div class="date">November 1, 2012 </div>
+									<h5><a href="#">Porsche to try out online sales</a></h5>
+									<div class="date">October 29, 2019 </div>
 									<div class="post">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... </p>
+										<p>Porsche is launching online car sales in the U.S. in a nod to shifting consumer shopping preferences. The pilot project with 25 dealers allows customers to shop vehicle inventory and complete paperwork online. </p>
 									</div>
 								</div>
 								<div class="all_wrapper"><a href="#" class="all_news">All news</a></div>
