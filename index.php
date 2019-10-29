@@ -1,3 +1,11 @@
+<?
+include_once("includes/func.php");
+
+$adverts=advertAll();
+
+?>
+
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -28,35 +36,35 @@
 									</div>
 								</div>
 								<div class="slide">
-									<img src="https://www.automobile-propre.com/wp-content/uploads/2015/09/tesla-model-s-autopartage_05-620x425.jpg" alt=""/>
+									<img src="images/placeholders/620x425.gif" alt=""/>
 									<div class="description">
 										<h2 class="title">2010 Mercedes-Benz Sport</h2>
 										<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
-										<div class="price">$ 56000</div>
+										<div class="price">$ 32 200</div>
 									</div>
 								</div>
 								<div class="slide">
-									<img src="https://motioncars.inquirer.net/files/2019/06/mercedes-cla-35-shooting-brake-02-620x425.jpg" alt=""/>
+									<img src="images/placeholders/620x425.gif" alt=""/>
 									<div class="description">
 										<h2 class="title">2002 Subaru Impreza</h2>
 										<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
-										<div class="price">$ 21000</div>
+										<div class="price">$ 32 200</div>
 									</div>
 								</div>
 								<div class="slide">
-									<img src="https://autophorie.de/wp-content/uploads/2019/04/2019-mercedes-cla-220d-coupe-digitalweiss-amg-line-4-620x425.jpg" alt=""/>
+									<img src="images/placeholders/620x425.gif" alt=""/>
 									<div class="description">
 										<h2 class="title">2012 Cadillac LaBaron</h2>
 										<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
-										<div class="price">$ 90 100</div>
+										<div class="price">$ 32 200</div>
 									</div>
 								</div>
 								<div class="slide">
-									<img src="https://mana.su/wp-content/uploads/2017/08/bmw-i3-2018-goda-novoe-pokolenie-elektromobilya-6-620x425.jpg" alt=""/>
+									<img src="images/placeholders/620x425.gif" alt=""/>
 									<div class="description">
 										<h2 class="title">2012 Ferrari Maranello 320</h2>
 										<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
-										<div class="price">$ 80 000</div>
+										<div class="price">$ 32 200</div>
 									</div>
 								</div>
 							</div>
@@ -195,92 +203,22 @@
 				<div class="recent">
 					<h2><strong>Recent</strong> listings</h2>
 					<div class="recent_carousel">
+						<?foreach ($adverts as $adv) {
+						?>
 						<div class="slide">
 							<a href="#">
-								<img src="images/automob/astra.jpg" alt=""/>
-								<div class="description">Registration 2010<br/>3.0 Diesel<br/>230 HP<br/>Body Coupe<br/>80 000 Miles</div>
-								<div class="title">Mercedes-Benz <span class="price">$ 115 265</span></div>
+								
+								<img src="<?=$adv['link']?>" alt=""/>
+								<div class="description">Registration <?=$adv['year']?><br/>Объем <?=$adv['volume'].", ".$adv['oil_type']?><br/>230 HP<br/>Body <?=$adv['type_name']?><br/><?=$adv['probeg']?> Miles</div>
+								<div class="title"><?=$adv['marca']?> <span class="price"><?=$adv['price']?></span></div>
+
 							</a>
 						</div>
-						<div class="slide">
-							<a href="#">
-								<img src="images/placeholders/220x164.gif" alt=""/>
-								<div class="description">Registration 2010<br/>3.0 Diesel<br/>230 HP<br/>Body Coupe<br/>80 000 Miles</div>
-								<div class="title">Mercedes-Benz <span class="price">$ 115 265</span></div>
-							</a>
-						</div>
-						<div class="slide">
-							<a href="#">
-								<img src="images/placeholders/220x164.gif" alt=""/>
-								<div class="description">Registration 2010<br/>3.0 Diesel<br/>230 HP<br/>Body Coupe<br/>80 000 Miles</div>
-								<div class="title">Mercedes-Benz <span class="price">$ 115 265</span></div>
-							</a>
-						</div>
-						<div class="slide">
-							<a href="#">
-								<img src="images/placeholders/220x164.gif" alt=""/>
-								<div class="description">Registration 2010<br/>3.0 Diesel<br/>230 HP<br/>Body Coupe<br/>80 000 Miles</div>
-								<div class="title">Mercedes-Benz <span class="price">$ 115 265</span></div>
-							</a>
-						</div>
-						<div class="slide">
-							<a href="#">
-								<img src="images/placeholders/220x164.gif" alt=""/>
-								<div class="description">Registration 2010<br/>3.0 Diesel<br/>230 HP<br/>Body Coupe<br/>80 000 Miles</div>
-								<div class="title">Mercedes-Benz <span class="price">$ 115 265</span></div>
-							</a>
-						</div>
-						<div class="slide">
-							<a href="#">
-								<img src="images/placeholders/220x164.gif" alt=""/>
-								<div class="description">Registration 2010<br/>3.0 Diesel<br/>230 HP<br/>Body Coupe<br/>80 000 Miles</div>
-								<div class="title">Mercedes-Benz <span class="price">$ 115 265</span></div>
-							</a>
-						</div>
-						<div class="slide">
-							<a href="#">
-								<img src="images/placeholders/220x164.gif" alt=""/>
-								<div class="description">Registration 2010<br/>3.0 Diesel<br/>230 HP<br/>Body Coupe<br/>80 000 Miles</div>
-								<div class="title">Mercedes-Benz <span class="price">$ 115 265</span></div>
-							</a>
-						</div>
-						<div class="slide">
-							<a href="#">
-								<img src="images/placeholders/220x164.gif" alt=""/>
-								<div class="description">Registration 2010<br/>3.0 Diesel<br/>230 HP<br/>Body Coupe<br/>80 000 Miles</div>
-								<div class="title">Mercedes-Benz <span class="price">$ 115 265</span></div>
-							</a>
-						</div>
-						<div class="slide">
-							<a href="#">
-								<img src="images/placeholders/220x164.gif" alt=""/>
-								<div class="description">Registration 2010<br/>3.0 Diesel<br/>230 HP<br/>Body Coupe<br/>80 000 Miles</div>
-								<div class="title">Mercedes-Benz <span class="price">$ 115 265</span></div>
-							</a>
-						</div>
-						<div class="slide">
-							<a href="#">
-								<img src="images/placeholders/220x164.gif" alt=""/>
-								<div class="description">Registration 2010<br/>3.0 Diesel<br/>230 HP<br/>Body Coupe<br/>80 000 Miles</div>
-								<div class="title">Mercedes-Benz <span class="price">$ 115 265</span></div>
-							</a>
-						</div>
-						<div class="slide">
-							<a href="#">
-								<img src="images/placeholders/220x164.gif" alt=""/>
-								<div class="description">Registration 2010<br/>3.0 Diesel<br/>230 HP<br/>Body Coupe<br/>80 000 Miles</div>
-								<div class="title">Mercedes-Benz <span class="price">$ 115 265</span></div>
-							</a>
-						</div>
-						<div class="slide">
-							<a href="#">
-								<img src="images/placeholders/220x164.gif" alt=""/>
-								<div class="description">Registration 2010<br/>3.0 Diesel<br/>230 HP<br/>Body Coupe<br/>80 000 Miles</div>
-								<div class="title">Mercedes-Benz <span class="price">$ 115 265</span></div>
-							</a>
-						</div>
+						<?}?>
 					</div>
 				</div>
+				<?
+				print_r($res); ?>
 				<div class="banners">
 					<div class="banner_1 main_banner">
 						<div class="text_wrapper">
@@ -537,22 +475,22 @@
 								<h2><strong>Auto</strong> news</h2>
 								<div class="news_box">
 									<a href="#" class="thumb">
-										<img src="https://s3-prod.autonews.com/s3fs-public/styles/width_792/public/RETAIL01_303029955_AR_-1_MCRXZCRAULWJ_0.jpg" alt=""/>
+										<img src="images/placeholders/180x135.gif" alt=""/>
 									</a>
-									<h5><a href="#">Ford to lay off 450 workers in Canada as Flex production ends</a></h5>
-									<div class="date">October 29, 2019 </div>
+									<h5><a href="#">UNOFFICIAL PORSCHE 918 SPYDER PRICING POPS UP</a></h5>
+									<div class="date">November 1, 2012 </div>
 									<div class="post">
-										<p>TORONTO — About 450 workers at Ford Motor Co.’s Oakville assembly plant in Canada will be laid off by early 2020 after the automaker ends production of the Ford Flex there. </p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... </p>
 									</div>
 								</div>
 								<div class="news_box bottom">
 									<a href="#" class="thumb">
-										<img src="https://s3-prod.autonews.com/s3fs-public/styles/width_792/public/Porsche-MAIN_i.jpg" alt=""/>
+										<img src="images/placeholders/180x135.gif" alt=""/>
 									</a>
-									<h5><a href="#">Porsche to try out online sales</a></h5>
-									<div class="date">October 29, 2019 </div>
+									<h5><a href="#">UNOFFICIAL PORSCHE 918 SPYDER PRICING POPS UP</a></h5>
+									<div class="date">November 1, 2012 </div>
 									<div class="post">
-										<p>Porsche is launching online car sales in the U.S. in a nod to shifting consumer shopping preferences. The pilot project with 25 dealers allows customers to shop vehicle inventory and complete paperwork online. </p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... </p>
 									</div>
 								</div>
 								<div class="all_wrapper"><a href="#" class="all_news">All news</a></div>
