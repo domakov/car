@@ -8,7 +8,7 @@
 					<div>WinterJuice, LLC, 1875 South Grant Street, Suite 680, San Mateo, CA 94402</div>
 				</div>
 				<div class="socials">
-					<a href="#"><img src="images/fb_icon.png" alt=""></a>
+					<a href="#"><img src="images/fbs_icon.png" alt=""></a>
 					<a href="#"><img src="images/twitter_icon.png" alt=""></a>
 					<a href="#"><img src="images/in_icon.png" alt=""></a>
 				</div>
@@ -18,12 +18,12 @@
 					<div id="navigation">
 						<span>Home</span>
 						<ul>
-							<li class="current"><a href="#">Home</a></li>
-							<li><a href="#">About Us</a></li>
-							<li><a href="OSPanel/domanis/git.hub/08_blog.php">Blog</a></li>
-							<li><a href="#">News</a></li>
-							<li><a href="#">For Salers</a></li>
-							<li><a href="#">Contacts</a></li>
+							<li class="current"><a href="../index.php">Home</a></li>
+							<li><a href="../about.php">About Us</a></li>
+							<li><a href="../blog.php">Blog</a></li>
+							<li><a href="../sale.php">News</a></li>
+							<li><a href="../11_dealer.php">For Salers</a></li>
+							<li><a href="../contact.php">Contacts</a></li>
 						</ul>
 					</div>
 					<div id="search_form">
