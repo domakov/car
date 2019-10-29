@@ -197,7 +197,7 @@
 					<div class="recent_carousel">
 						<div class="slide">
 							<a href="#">
-								<img src="images/placeholders/220x164.gif" alt=""/>
+								<img src="automob/astra.jpg" alt=""/>
 								<div class="description">Registration 2010<br/>3.0 Diesel<br/>230 HP<br/>Body Coupe<br/>80 000 Miles</div>
 								<div class="title">Mercedes-Benz <span class="price">$ 115 265</span></div>
 							</a>
