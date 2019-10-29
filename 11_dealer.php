@@ -25,10 +25,10 @@
 					<h1><strong>Dealer</strong>  name here</h1>
 					<div class="blog">
 						<div class="best_offer">
-							<img src="images/placeholders/660x425.gif" alt=""/>
+							<img src="https://www.mercedes-benz.com/en/exhibitions/gims/vehicles/cls-350/_jcr_content/root/slider/sliderchilditems/slideritem/image/MQ6-0-image-20190212164402/01-mercedes-benz-gims-2019-vehicles-cls-350-c-257-3400x1440.jpeg" alt=""/>
 							<div class="label"><strong>Best</strong> offer</div>
 							<div class="description">
-								<h2 class="title">2012 Mercedes-Benz CLS 320</h2>
+								<h2 class="title">Mercedes Benz CLS 350</h2>
 								<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
 								<div class="price">$ 32 200</div>
 							</div>

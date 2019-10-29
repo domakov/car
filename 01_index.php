@@ -23,40 +23,40 @@
 									<img src="images/placeholders/620x425.gif" alt=""/>
 									<div class="description">
 										<h2 class="title">2012 Mercedes-Benz CLS 320</h2>
-										<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
-										<div class="price">$ 32 200</div>
+										<p class="desc"><span><strong>Miles: </strong>8,025</span><span><strong>Engine: </strong>2.0</span></p>
+										<div class="price">$ 19 999</div>
 									</div>
 								</div>
 								<div class="slide">
 									<img src="images/placeholders/620x425.gif" alt=""/>
 									<div class="description">
 										<h2 class="title">2010 Mercedes-Benz Sport</h2>
-										<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
-										<div class="price">$ 32 200</div>
+										<p class="desc"><span><strong>Miles: </strong>5,145</span><span><strong>Engine: </strong>1.6</span></p>
+										<div class="price">$ 17 999</div>
 									</div>
 								</div>
 								<div class="slide">
 									<img src="images/placeholders/620x425.gif" alt=""/>
 									<div class="description">
 										<h2 class="title">2002 Subaru Impreza</h2>
-										<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
-										<div class="price">$ 32 200</div>
+										<p class="desc"><span><strong>Miles: </strong>9,862</span><span><strong>Engine: </strong>1.0</span></p>
+										<div class="price">$ 13 899</div>
 									</div>
 								</div>
 								<div class="slide">
 									<img src="images/placeholders/620x425.gif" alt=""/>
 									<div class="description">
 										<h2 class="title">2012 Cadillac LaBaron</h2>
-										<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
-										<div class="price">$ 32 200</div>
+										<p class="desc"><span><strong>Miles: </strong>16,856</span><span><strong>Engine: </strong>2.6</span></p>
+										<div class="price">$ 38 799</div>
 									</div>
 								</div>
 								<div class="slide">
 									<img src="images/placeholders/620x425.gif" alt=""/>
 									<div class="description">
 										<h2 class="title">2012 Ferrari Maranello 320</h2>
-										<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
-										<div class="price">$ 32 200</div>
+										<p class="desc"><span><strong>Miles: </strong>7,534</span><span><strong>Engine: </strong>2.6</span></p>
+										<div class="price">$ 58 999</div>
 									</div>
 								</div>
 							</div>
@@ -66,6 +66,7 @@
 						<div class="search_auto">
 							<h3><strong>Search</strong> auto</h3>
 							<div class="categories">
+								
 								<input type="radio" id="search_radio_1" checked="checked" name="category"/>
 								<label for="search_radio_1" class="search_radio_1"></label>
 								<input type="radio" id="search_radio_2" name="category"/>
@@ -74,11 +75,14 @@
 								<label for="search_radio_3" class="search_radio_3"></label>
 								<input type="radio" id="search_radio_4" name="category"/>
 								<label for="search_radio_4" class="search_radio_4"></label>
+
 							</div>
 							<div class="clear"></div>
 							<label><strong>Manufacturer:</strong></label>
 							<div class="select_box_1">
+
 								<select class="select_1">
+
 									<option value="0">Any</option>
 									<option value="1">Audi</option>
 									<option value="2">Mercedes-Benz</option>
@@ -88,11 +92,15 @@
 									<option value="6">Ford</option>
 									<option value="7">Fiat</option>
 									<option value="8">Dodge</option>
+
 								</select>
+
 							</div>
 							<label><strong>Model:</strong></label>
 							<div class="select_box_1">
+
 								<select class="select_1">
+
 									<option value="0">Any</option>
 									<option value="1">R8</option>
 									<option value="2">S500</option>
@@ -102,11 +110,15 @@
 									<option value="6">Taurus</option>
 									<option value="7">Doblo</option>
 									<option value="8">Viper</option>
+
 								</select>
+
 							</div>
 							<label><strong>Year:</strong></label>
 							<div class="select_box_2">
+
 								<select class="select_2">
+
 									<option value="0">From</option>
 									<option value="1">2013</option>
 									<option value="2">2012</option>
@@ -116,8 +128,11 @@
 									<option value="6">2008</option>
 									<option value="7">2007</option>
 									<option value="8">2006</option>
+
 								</select>
+
 								<select class="select_2">
+
 									<option value="0">To</option>
 									<option value="1">2013</option>
 									<option value="2">2012</option>
@@ -127,12 +142,16 @@
 									<option value="6">2008</option>
 									<option value="7">2007</option>
 									<option value="8">2006</option>
+
 								</select>
+
 								<div class="clear"></div>
 							</div>
 							<label><strong>Price:</strong></label>
 							<div class="select_box_2">
+
 								<select class="select_2">
+
 									<option value="0">From</option>
 									<option value="1">1000</option>
 									<option value="2">2000</option>
@@ -142,8 +161,11 @@
 									<option value="6">6000</option>
 									<option value="7">7000</option>
 									<option value="8">8000</option>
+
 								</select>
+
 								<select class="select_2">
+
 									<option value="0">To</option>
 									<option value="1">1000</option>
 									<option value="2">2000</option>
@@ -153,12 +175,16 @@
 									<option value="6">6000</option>
 									<option value="7">7000</option>
 									<option value="8">8000</option>
+
 								</select>
+
 								<div class="clear"></div>
 							</div>
 							<label><strong>Mileage:</strong></label>
 							<div class="select_box_2">
+
 								<select class="select_2">
+
 									<option value="0">From</option>
 									<option value="1">1000</option>
 									<option value="2">2000</option>
@@ -168,8 +194,11 @@
 									<option value="6">6000</option>
 									<option value="7">7000</option>
 									<option value="8">8000</option>
+
 								</select>
+
 								<select class="select_2">
+
 									<option value="0">To</option>
 									<option value="1">1000</option>
 									<option value="2">2000</option>
@@ -179,7 +208,9 @@
 									<option value="6">6000</option>
 									<option value="7">7000</option>
 									<option value="8">8000</option>
+									
 								</select>
+
 								<div class="clear"></div>
 							</div>
 							<div class="chb_wrapper">
@@ -537,17 +568,17 @@
 								<h2><strong>Auto</strong> news</h2>
 								<div class="news_box">
 									<a href="#" class="thumb">
-										<img src="images/placeholders/180x135.gif" alt=""/>
+										<img src="https://s3-prod.autonews.com/s3fs-public/styles/width_792/public/RETAIL01_303029955_AR_-1_MCRXZCRAULWJ_0.jpg" alt=""/>
 									</a>
-									<h5><a href="#">UNOFFICIAL PORSCHE 918 SPYDER PRICING POPS UP</a></h5>
-									<div class="date">November 1, 2012 </div>
+									<h5><a href="#">Ford to lay off 450 workers in Canada as Flex production ends</a></h5>
+									<div class="date">October 29, 2019 </div>
 									<div class="post">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... </p>
+										<p>TORONTO — About 450 workers at Ford Motor Co.’s Oakville assembly plant in Canada will be laid off by early 2020 after the automaker ends production of the Ford Flex there. </p>
 									</div>
 								</div>
 								<div class="news_box bottom">
 									<a href="#" class="thumb">
-										<img src="images/placeholders/180x135.gif" alt=""/>
+										<img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Ray_Baldwin_Subaru_Stamford_NY_Auto_Show_066.JPG" alt=""/>
 									</a>
 									<h5><a href="#">UNOFFICIAL PORSCHE 918 SPYDER PRICING POPS UP</a></h5>
 									<div class="date">November 1, 2012 </div>
