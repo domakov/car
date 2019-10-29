@@ -32,7 +32,7 @@
 									<div class="description">
 										<h2 class="title">2010 Mercedes-Benz Sport</h2>
 										<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
-										<div class="price">$ 32 200</div>
+										<div class="price">$ 56000</div>
 									</div>
 								</div>
 								<div class="slide">
@@ -40,7 +40,7 @@
 									<div class="description">
 										<h2 class="title">2002 Subaru Impreza</h2>
 										<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
-										<div class="price">$ 32 200</div>
+										<div class="price">$ 21000</div>
 									</div>
 								</div>
 								<div class="slide">
@@ -48,7 +48,7 @@
 									<div class="description">
 										<h2 class="title">2012 Cadillac LaBaron</h2>
 										<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
-										<div class="price">$ 32 200</div>
+										<div class="price">$ 90 100</div>
 									</div>
 								</div>
 								<div class="slide">
@@ -56,7 +56,7 @@
 									<div class="description">
 										<h2 class="title">2012 Ferrari Maranello 320</h2>
 										<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
-										<div class="price">$ 32 200</div>
+										<div class="price">$ 80 000</div>
 									</div>
 								</div>
 							</div>
