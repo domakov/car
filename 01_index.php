@@ -568,7 +568,7 @@
 								<h2><strong>Auto</strong> news</h2>
 								<div class="news_box">
 									<a href="#" class="thumb">
-										<img src="images/placeholders/180x135.gif" alt=""/>
+										<img src="https://s3-prod.autonews.com/s3fs-public/styles/width_792/public/RETAIL01_303029955_AR_-1_MCRXZCRAULWJ_0.jpg" alt=""/>
 									</a>
 									<h5><a href="#">Ford to lay off 450 workers in Canada as Flex production ends</a></h5>
 									<div class="date">October 29, 2019 </div>
