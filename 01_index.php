@@ -570,15 +570,15 @@
 									<a href="#" class="thumb">
 										<img src="images/placeholders/180x135.gif" alt=""/>
 									</a>
-									<h5><a href="#">UNOFFICIAL PORSCHE 918 SPYDER PRICING POPS UP</a></h5>
-									<div class="date">November 1, 2012 </div>
+									<h5><a href="#">Ford to lay off 450 workers in Canada as Flex production ends</a></h5>
+									<div class="date">October 29, 2019 </div>
 									<div class="post">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... </p>
+										<p>TORONTO — About 450 workers at Ford Motor Co.’s Oakville assembly plant in Canada will be laid off by early 2020 after the automaker ends production of the Ford Flex there. </p>
 									</div>
 								</div>
 								<div class="news_box bottom">
 									<a href="#" class="thumb">
-										<img src="images/placeholders/180x135.gif" alt=""/>
+										<img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Ray_Baldwin_Subaru_Stamford_NY_Auto_Show_066.JPG" alt=""/>
 									</a>
 									<h5><a href="#">UNOFFICIAL PORSCHE 918 SPYDER PRICING POPS UP</a></h5>
 									<div class="date">November 1, 2012 </div>
