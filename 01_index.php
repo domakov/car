@@ -228,8 +228,8 @@
 					<div class="recent_carousel">
 						<div class="slide">
 							<a href="#">
-								<img src="images/placeholders/220x164.gif" alt=""/>
-								<div class="description">Registration 2010<br/>3.0 Diesel<br/>230 HP<br/>Body Coupe<br/>80 000 Miles</div>
+								<img src="https://cdn2.autoexpress.co.uk/sites/autoexpressuk/files/2019/09/image_from_ios_9.jpg" alt=""/>
+								<div class="description">Registration 2019<br/>3.0 Diesel<br/>230 HP<br/>Body Coupe<br/>80 000 Miles</div>
 								<div class="title">Mercedes-Benz <span class="price">$ 115 265</span></div>
 							</a>
 						</div>
