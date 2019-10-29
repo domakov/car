@@ -10,9 +10,6 @@
 		<?
 		include_once ('includes/header.php');
 		?>
-			<?
-				include_once("includes/menu.php");
-			?>
 	<!--EOF HEADER-->
 	<!--BEGIN CONTENT-->
 		<div id="content">
