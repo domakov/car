@@ -1,6 +1,23 @@
 <?
 include_once('database.php');
 
+
+function newsOne($id){
+
+$sql="SELECT * FROM news
+		INNER JOIN users ON
+		news.user_id=users.id WHERE news_id=$id";
+	return queryEasy ($sql);
+
+}
+function allNews(){
+
+	$sql="SELECT * FROM news
+		INNER JOIN users ON
+		news.user_id=users.id";
+	return queryEasy ($sql);
+}
+
 function fetchAllTables($table, $table1, $key, $key1){
 
 
@@ -38,8 +55,12 @@ function queryEasy ($query){
 	$res=mysqli_query($link, $query);
 	$count=mysqli_num_rows($res);
 
-		if($count){
-			while($arr=mysqli_fetch_assoc($res)){
+		if($count==1){
+			
+				$results=mysqli_fetch_assoc($res);
+			}
+			elseif($count>1){
+				while($arr=mysqli_fetch_assoc($res)){
 				$results[]=$arr;
 			}
 		}

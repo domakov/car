@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<?include_once ('includes/head.php');?>
+	<?include_once ('includes/func.php');?>
 </head>
 <body class="blog_page single">
 	<!--BEGIN HEADER-->
@@ -17,14 +18,25 @@
 					<img src="images/marker_2.gif" alt=""/>
 					<span>Blog</span>
 				</div>
+				<?
+					$id=$_GET['id'];
+					if(!isset($id)){
+						$id=1;
+					}
+					if(is_int($id)){
+						$id=1;
+					}
+					$news=newsOne($id);
+					//print_r($news);
+				?>
 				<div class="main_wrapper">
 					<h1><strong>Welcome</strong>  to our blog</h1>
 					<div class="blog">
 						<div class="blog_single_post">
-							<h4>Here comes the blog title</h4>
+							<h4><?=$news['title']?></h4>
 							<div class="grey_area">
-								<a href="#" class="blog_date">November 1, 2012</a>
-								<a href="#" class="blog_author">Admin</a>
+								<a href="#" class="blog_date"><?=$news['date_create']?></a>
+								<a href="#" class="blog_author"><?=$news['login']?></a>
 								<div class="blog_category">
 									<a href="#" >Cars</a>, 
 									<a href="#" >vehicle</a>
@@ -32,15 +44,8 @@
 								<a href="#" class="blog_comments">7 Comments</a>
 							</div>
 							<div class="post">
-								<img src="images/placeholders/312x248.gif" alt="" class="alignleft"/>
-								<p>Lorem ipsum dolo stet consectet adipiscing elit. Vestibul dictum, nisi id vulputate ullamcoper lorem ipsum dolo st consectetur adipiscing elit. Vestibulu dictu, nisi id vulput ullamcoper lorem ipsum dolo stet. Vestibulu dictum, nisi id vulputate ullamcoper.</p>
-								<p>Lorem ipsum dolo stet consectet adipiscing elit. Vestibul dictum, nisi id vulputate ullamcoper lorem ipsum dolo st consectetur adipiscing elit. Vestibulu dictum, nisi vulputa ullamcoper lorem ipsum dolo stet. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum et dolo stet. Lorem ipsum dolo stet consectetur adipiscing elit. </p>
-								<div class="clear"></div>
-								<p>Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo st consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet. Vestibulu dictum, nisi vulputate ullamcoper lorem ipsum dolo stet consectetur adipiscing elit.  Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. </p>
-								<cite class="alignleft">Nulla ornare imperdiet elit morbi in erat sit amet nibh laoreet congue in vitae ante suspendisse stet imperdiet euismod suscipit imperdiet elit.</cite>
-								<p>Lorem ipsum dolo stet consectet adipiscing elit. Vestibul dictum, nisi id vulputate ullamcoper lorem ipsum dolo st consectetur adipiscing elit. Vestibulu dictu, nisi id vulput ullamcoper lorem ipsum dolo stet. Vestibulu dictum, nisi id vulputate ullamcoper.</p>
-								<div class="clear"></div>
-								<p>Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo st consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet. Vestibulu dictum, nisi vulputate ullamcoper lorem ipsum dolo stet consectetur adipiscing elit.  Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo ste. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet consectetur.</p>
+								<img src="automob/<?=$news['image']?>" alt="" class="alignleft"/>
+								<?=$news['text']?>
 							</div>
 						</div>
 						<div class="comments">
