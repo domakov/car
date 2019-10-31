@@ -1,6 +1,19 @@
 <?
 include_once('database.php');
+function addComment($text_comment,$news_id,$user_id){
 
+	global $link;
+	$sql="INSERT INTO comment_news(comment,news_id,user_id)
+		VALUES('$text_comment',$news_id,$user_id)";
+
+		return mysqli_query($link,$sql);
+}
+function getNewsComment($id){
+	$sql="SELECT * FROM comment_news as cn
+	INNER JOIN users ON
+	cn.user_id=users.id WHERE news_id=$id ORDER BY comm_create DESC";
+	return queryEasy($sql);
+}
 
 function newsOne($id){
 
@@ -54,10 +67,10 @@ function queryEasy ($query){
 	global $link;
 	$res=mysqli_query($link, $query);
 	$count=mysqli_num_rows($res);
-
+	//$results=[];
 		if($count==1){
 			
-				$results=mysqli_fetch_assoc($res);
+				$results[]=mysqli_fetch_assoc($res);
 			}
 			elseif($count>1){
 				while($arr=mysqli_fetch_assoc($res)){
@@ -66,6 +79,9 @@ function queryEasy ($query){
 		}
 
 		return $results;
+}
+function summComm ($comments){
+	
 }
 
 function fetchTable ($table){

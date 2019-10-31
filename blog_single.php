@@ -23,9 +23,9 @@
 					if(!isset($id)){
 						$id=1;
 					}
-					if(is_int($id)){
+					/*if(is_int($id)){
 						$id=1;
-					}
+					}*/
 					$news=newsOne($id);
 					//print_r($news);
 				?>
@@ -33,10 +33,10 @@
 					<h1><strong>Welcome</strong>  to our blog</h1>
 					<div class="blog">
 						<div class="blog_single_post">
-							<h4><?=$news['title']?></h4>
+							<h4><?=$news[0]['title']?></h4>
 							<div class="grey_area">
-								<a href="#" class="blog_date"><?=$news['date_create']?></a>
-								<a href="#" class="blog_author"><?=$news['login']?></a>
+								<a href="#" class="blog_date"><?=$news[0]['date_create']?></a>
+								<a href="#" class="blog_author"><?=$news[0]['login']?></a>
 								<div class="blog_category">
 									<a href="#" >Cars</a>, 
 									<a href="#" >vehicle</a>
@@ -44,120 +44,57 @@
 								<a href="#" class="blog_comments">7 Comments</a>
 							</div>
 							<div class="post">
-								<img src="automob/<?=$news['image']?>" alt="" class="alignleft"/>
-								<?=$news['text']?>
+								<img src="automob/<?=$news[0]['image']?>" alt="" class="alignleft"/>
+								<?=$news[0]['text']?>
 							</div>
 						</div>
 						<div class="comments">
 							<h4>Comments</h4>
 							<ul>
+						<?
+
+						$comments =	getNewsComment($id);
+						//print_r($comments);
+							if ($comments) {
+							
+							foreach ($comments as $comment) {
+								# code...
+						?>
+						
 								<li class="first">
 									<div class="wrapper">
 										<img src="images/placeholders/61x61.gif" alt=""/>
 										<div class="comment_data">
 											<div class="comment_author">
-												<div class="author">John Doe</div>
-												<div class="date">November 1, 2012 </div>
-											</div>
-											<div class="comment">Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum.</div>
-										</div>
-										<div class="clear"></div>
-									</div>
-									<ul>
-										<li>
-											<div class="wrapper">
-												<img src="images/placeholders/61x61.gif" alt=""/>
-												<div class="comment_data">
-													<div class="comment_author">
-														<div class="author">John Doe</div>
-														<div class="date">November 1, 2012 </div>
-													</div>
-													<div class="comment">Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet. </div>
+												<div class="author">
+													
+													<?=$comment['login'];
+												?>
+													
 												</div>
-												<div class="clear"></div>
+												<div class="date">
+												<?=$comment['comm_create'];
+												?></div>
 											</div>
-											<ul>
-												<li>
-													<div class="wrapper">
-														<img src="images/placeholders/61x61.gif" alt=""/>
-														<div class="comment_data">
-															<div class="comment_author">
-																<div class="author">John Doe</div>
-																<div class="date">November 1, 2012 </div>
-																<a href="#" class="reply">Reply</a>
-															</div>
-															<div class="comment">Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper. </div>
-														</div>
-														<div class="clear"></div>
-													</div>
-												</li>
-											</ul>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<div class="wrapper">
-										<img src="images/placeholders/61x61.gif" alt=""/>
-										<div class="comment_data">
-											<div class="comment_author">
-												<div class="author">John Doe</div>
-												<div class="date">November 1, 2012 </div>
+											<div class="comment">
+											<?=$comment['comment'];
+											?>
+												
 											</div>
-											<div class="comment">Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum.</div>
 										</div>
-										<div class="clear"></div>
-									</div>
-									<ul>
-										<li>
-											<div class="wrapper">
-												<img src="images/placeholders/61x61.gif" alt=""/>
-												<div class="comment_data">
-													<div class="comment_author">
-														<div class="author">John Doe</div>
-														<div class="date">November 1, 2012 </div>
-													</div>
-													<div class="comment">Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet. </div>
-												</div>
-												<div class="clear"></div>
-											</div>
-										</li>
-									</ul>
-								</li>
-								<li class="last">
-									<div class="wrapper">
-										<img src="images/placeholders/61x61.gif" alt=""/>
-										<div class="comment_data">
-											<div class="comment_author">
-												<div class="author">John Doe</div>
-												<div class="date">November 1, 2012 </div>
-											</div>
-											<div class="comment">Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum dolo stet. Vestibulu dictum, nisi id vulputate ullamcoper lorem ipsum.</div>
-										</div>
+										
+												
+														
 										<div class="clear"></div>
 									</div>
 								</li>
+								<?}}?>
+
 							</ul>
 						</div>
 						<div class="comment_form">
 							<h2><strong>Leave</strong> a comment</h2>
-							<form method="get" action="#">
-								<div class="fld_box">
-									<label>Name: </label>
-									<input type="text" value=""/>
-								</div>
-								<div class="fld_box center">
-									<label>E-mail: </label>
-									<input type="text" value=""/>
-								</div>
-								<div class="fld_box">
-									<label>Website: </label>
-									<input type="text" value=""/>
-								</div>
-								<div class="clear"></div>
-								<label>Comment: </label>
-								<textarea cols="20" rows="20"></textarea>
-								<input type="submit" value="submit" class="submit"/>
-							</form>
+							<?include_once('includes/addcomment.php')?>
 						</div>
 					</div>
 					<div class="sidebar">
