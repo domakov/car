@@ -7,7 +7,7 @@
 </head>
 <body class="not_found">
 	<!--BEGIN HEADER-->
-<<<<<<< HEAD:03_404.php
+
 		<?
 		include ('includes/header.php');
 		?>
