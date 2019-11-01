@@ -87,6 +87,7 @@ function summComm ($comments){
 function fetchTable ($table){
 
 	$sql="SELECT * FROM $table";
+	echo "$sql";
 	return queryEasy($sql);
 }
 function fetchTable2($table){
