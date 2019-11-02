@@ -1,3 +1,6 @@
+<?
+include_once ('head.php');
+?>
 <div id="header">
 			<div class="top_info">
 				<div class="logo">
@@ -18,7 +21,7 @@
 					<div id="navigation">
 						<span>Home</span>
 						<ul>
-							<li class="current"><a href="index.php">Home</a></li>
+							<li><a href="index.php">Home</a></li>
 							<li><a href="about.php">About Us</a></li>
 							<li><a href="blog.php">Blog</a></li>
 							<li><a href="sale.php">News</a></li>

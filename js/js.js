@@ -16,6 +16,18 @@ jQuery(document).ready(function(){
 		animationStart: function(){},
 		animationComplete: function(){}
 	});*/
+	$(function(){
+	var location = window.location.href;
+
+	$('#navigation li').each(function(){
+		var link = $(this).find('a').attr('href');
+
+		if (location.indexOf(link) !== -1)
+		{
+			$(this).addClass('current');
+		}
+	});
+	});
 	$('.slider_1').bxSlider({
    	 	slideWidth: 940,
     	minSlides: 1,
