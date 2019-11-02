@@ -3,45 +3,8 @@
 <head>
 	<?
 	include_once("includes/head.php");
+	include_once("includes/func.php");
 	?>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-	<!-- Facebook APP ID -->
-	<meta property="fb:app_id" content="12345"/>
-
-	<meta name="keywords" content="Car-Dealer, auto-salon, automobile, business, car, car-gallery, car-selling-template, cars, dealer, marketplace, mobile, real estate, responsive, sell, vehicle" />
-	<meta name="description" content="Auto Dealer HTML - Responsive HTML Auto Dealer Template" />
-
-	<!-- Open Graph -->
-	<meta property="og:site_name" content="Auto Dealer HTML"/>
-	<meta property="og:title" content="Product Page" />
-	<meta property="og:url" content="http://localhost/06_product_page.html" />
-	<meta property="og:image" content="http://cdn.winterjuice.com/example/autodealer/image.jpg" />
-	<meta property="og:description" content="Auto Dealer HTML - Responsive HTML Auto Dealer Template" />
-
-	<!-- Page Title -->
-	<title>Car</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
-	<link rel="stylesheet" type="text/css" href="css/style980.css" />
-	<link rel="stylesheet" type="text/css" href="css/style800.css" />
-	<link rel="stylesheet" type="text/css" href="css/style700.css" />
-	<link rel="stylesheet" type="text/css" href="css/style600.css" />
-	<link rel="stylesheet" type="text/css" href="css/style500.css" />
-	<link rel="stylesheet" type="text/css" href="css/style400.css" />
-	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.4.css" media="screen" />
-	<!--[if IE]>
-	<link href="css/style_ie.css" rel="stylesheet" type="text/css">
-	<![endif]-->
-	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-	<script type="text/javascript" src="js/jquery.bxslider.js"></script>
-	<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
-	<script type="text/javascript" src="js/jquery.selectik.js"></script>
-	<script type="text/javascript" src="js/jquery.mousewheel-3.0.4.pack.js"></script>
-	<script type="text/javascript" src="js/jquery.fancybox-1.3.4.pack.js"></script>
-	<script type="text/javascript" src="js/jquery.countdown.js"></script>
-	<script type="text/javascript" src="js/jquery.checkbox.js"></script>
-	<script type="text/javascript" src="js/js.js"></script>
 </head>
 <body class="car">
 	<!--BEGIN HEADER-->
@@ -61,17 +24,22 @@
 					<img src="images/marker_2.gif" alt=""/>
 					<span>Mercedes-Benz CLS 320</span>
 				</div>
+				<?
+					$id=$_GET['car_id'];
+					$adverts=advOne($id);
+					print_r($adverts);
+				?>
 				<div class="main_wrapper">
 					<div class="cars_id">
-						<div class="id">Offer ID <span>C24021482</span></div>
-						<div class="views">The offer had 1944 Views</div>
+						<div class="id">Offer ID <span><?=$adverts['0']['adv_id']?></span></div>
+						<div class="views">The offer had <?=$adverts['0']['view_count']?> Views</div>
 					</div>
-					<h1><strong>Mercedes-Benz</strong> CLS 320</h1>
+					<h1><strong><?=$adverts['0']['marca']." "?></strong><?=$adverts['0']['model']?></h1>
 					<div class="car_image_wrapper car_group">
 						<div class="big_image">
 							<a href="https://img.drive.ru/i/0/5a1ec702ec05c4ef24000140.jpeg" class="car_group">
 								<img src="images/zoom.png" alt="" class="zoom"/>
-								<img src="https://img.drive.ru/i/0/5a1ec702ec05c4ef24000140.jpeg" alt=""/>
+								<img src="<?=$adverts['0']['link']?>" alt=""/>
 							</a>
 						</div>
 						<div class="small_img">
@@ -94,20 +62,20 @@
 					</div>
 					<div class="car_characteristics">
 						<a href="#" class="print"></a>
-						<div class="price">54.980 EURO <span>* Price negotiable</span></div>
+						<div class="price"><?=$adverts['0']['price']." "?>EURO<span>* Price negotiable</span></div>
 						<div class="clear"></div>
 						<div class="features_table">
 							<div class="line grey_area">
 								<div class="left">Model, Body type:</div>
-								<div class="right">Mercedes-Benz CLS 320, Coupe</div>
+								<div class="right"><?=$adverts['0']['marca']." ".$adverts['0']['model']." ".$adverts['0']['type_name']?></div>
 							</div>
 							<div class="line">
 								<div class="left">Fabrication:</div>
-								<div class="right">2010</div>
+								<div class="right"><?=$adverts['0']['year']?></div>
 							</div>
 							<div class="line grey_area">
 								<div class="left">Fuel:</div>
-								<div class="right">Diesel</div>
+								<div class="right"><?=$adverts['0']['oil_type']?></div>
 							</div>
 							<div class="line">
 								<div class="left">Engine:</div>
@@ -115,11 +83,11 @@
 							</div>
 							<div class="line grey_area">
 								<div class="left">Transmision:</div>
-								<div class="right">Automatic</div>
+								<div class="right"><?=$adverts['0']['cpp_type']?></div>
 							</div>
 							<div class="line">
 								<div class="left">Color:</div>
-								<div class="right">Black</div>
+								<div class="right"><?=$adverts['0']['color_name']?></div>
 							</div>
 							<div class="line grey_area">
 								<div class="left">Doors:</div>
