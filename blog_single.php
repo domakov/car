@@ -27,7 +27,6 @@
 						$id=1;
 					}*/
 					$news=newsOne($id);
-					print_r($news);
 				?>
 				<div class="main_wrapper">
 					<h1><strong>Welcome</strong>  to our blog</h1>
