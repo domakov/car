@@ -113,21 +113,21 @@ INSERT INTO `cpp` (`cpp_id`, `cpp_type`) VALUES
 -- Дамп данных таблицы car.images: ~12 rows (приблизительно)
 /*!40000 ALTER TABLE `images` DISABLE KEYS */;
 INSERT INTO `images` (`id`, `link`, `advert_id`) VALUES
-	(1, 'automob/tesla_x.jpg', 1),
-	(2, 'automob/tesla_x.jpg', 2),
-	(3, 'automob/tesla_x.jpg', 3),
-	(4, 'automob/camry70.jpg', 4),
+	(1, 'automob/teslax.jpg', 1),
+	(2, 'automob/teslax.jpg', 2),
+	(3, 'automob/teslax.jpg', 3),
+	(4, 'automob/camry_70.jpg', 4),
 	(5, 'automob/cclass.jpg', 5),
 	(6, 'automob/cclass_coupe.jpg', 6),
 	(7, 'automob/lx570.jpg', 8),
 	(8, 'automob/rio.jpg', 9),
 	(9, 'automob/semi.jpg', 10),
-	(10, 'automob/tesla_s.jpg', 11),
-	(11, 'automob/tesla_x.jpg', 12),
+	(10, 'automob/teslas.jpg', 11),
+	(11, 'automob/teslax.jpg', 12),
 	(12, 'automob/x5.jpg', 13);
 /*!40000 ALTER TABLE `images` ENABLE KEYS */;
 
--- Дамп данных таблицы car.marca: ~11 rows (приблизительно)
+-- Дамп данных таблицы car.marca: ~12 rows (приблизительно)
 /*!40000 ALTER TABLE `marca` DISABLE KEYS */;
 INSERT INTO `marca` (`marca_id`, `marca`, `active`) VALUES
 	(1, 'BMW', 1),

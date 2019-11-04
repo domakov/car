@@ -2,6 +2,7 @@
 <?
 $link=mysqli_connect('localhost','root','','car');
 include_once("func.php");
+include_once("head.php");
 if(isset($_POST['registration'])){
 
 	$login=trim($_POST['login']);
@@ -57,9 +58,9 @@ if(isset($_POST['registration'])){
 
 }
 ?>
-<div>
+<div class="registration">
 		<h1>Тіркелу</h1>
-		<form method="POST">
+		<form method="POST" class="reg">
 			<div class="error"><?=$error?></div>
 			<input type="text" name="name" placeholder="Имя"><br/>
 			<input type="text" name="login" placeholder="Логин"><br/>
