@@ -177,7 +177,7 @@ $adverts=advertAll();
 						<?foreach ($adverts as $adv) {
 						?>
 						<div class="slide">
-							<a href="sale.php?car_id=<?=$adv['id']?>">
+							<a href="sale.php?car_id=<?=$adv['adv_id']?>">
 								
 								<img src="<?=$adv['link']?>" alt=""/>
 								<div class="description">Registration <?=$adv['year']?><br/>Объем <?=$adv['volume'].", ".$adv['oil_type']?><br/>230 HP<br/>Body <?=$adv['type_name']?><br/><?=$adv['probeg']?> Miles</div>

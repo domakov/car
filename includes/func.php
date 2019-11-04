@@ -31,9 +31,9 @@ function advOne($id){
 			INNER JOIN cpp ON
 			cpp.cpp_id=advert.cpp_id
 			INNER JOIN color ON
-			color.color_id=advert.color_id
+			color.id=advert.color_id
 			where advert.adv_id=$id";
- return queryEasy ($sql);
+ 			return queryEasy ($sql);
 }
 function newsOne($id){
 $sql="SELECT * FROM news
@@ -88,9 +88,9 @@ function advertAll(){
 			INNER JOIN cpp ON
 			cpp.cpp_id=advert.cpp_id
 			INNER JOIN color ON
-			color.color_id=advert.color_id
+			color.id=advert.color_id
 			limit 10";
- return queryEasy ($sql);
+ return queryEasy($sql);
 
 }
 function queryEasy ($query){
