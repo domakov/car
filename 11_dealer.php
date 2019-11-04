@@ -56,7 +56,7 @@
 								<div class="grey_area">
 									<a href="#" class="blog_date"><?=$post['date_create']?></a>
 									<a href="#" class="blog_author"><?=$post['login']?></a>
-									
+
 									<div class="blog_category">
 										<a href="#" >Cars</a>, 
 										<a href="#" >vehicle</a>
