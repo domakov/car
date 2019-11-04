@@ -26,6 +26,9 @@
 				</div>
 				<?
 					$id=$_GET['car_id'];
+					if(!isset($id)){
+						$id=1;
+					}
 					$adverts=advOne($id);
 				?>
 				<div class="main_wrapper">
