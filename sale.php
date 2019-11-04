@@ -39,7 +39,7 @@
 					<h1><strong><?=$adverts['0']['marca']." "?></strong><?=$adverts['0']['model']?></h1>
 					<div class="car_image_wrapper car_group">
 						<div class="big_image">
-							<a href="https://img.drive.ru/i/0/5a1ec702ec05c4ef24000140.jpeg" class="car_group">
+							<a href="<?=$adverts['0']['link']?>" class="car_group">
 								<img src="images/zoom.png" alt="" class="zoom"/>
 								<img src="<?=$adverts['0']['link']?>" alt=""/>
 							</a>
