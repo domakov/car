@@ -30,7 +30,7 @@ $adverts=advertAll();
 							<div class="slider slider_1">
 								<?foreach ($adverts as $adv) {?>
 								<div class="slide">
-									<img src="<?=$adv['link']?>" alt=""/>
+								<img src="<?=$adv['link']?>" alt=""/>
 									<div class="description">
 										<h2 class="title"><?echo $adv['year']." "; echo $adv['marca']." "; echo $adv['model'];?> </h2>
 										<p class="desc"><span><strong>Kilometr: </strong><?=$adv['probeg']?></span><span><strong>Engine: </strong><?=$adv['volume']?></span></p>
@@ -178,7 +178,7 @@ $adverts=advertAll();
 						<?foreach ($adverts as $adv) {
 						?>
 						<div class="slide">
-							<a href="#">
+							<a href="sale.php?car_id=<?=$adv['id']?>">
 								
 								<img src="<?=$adv['link']?>" alt=""/>
 								<div class="description">Registration <?=$adv['year']?><br/>Объем <?=$adv['volume'].", ".$adv['oil_type']?><br/>230 HP<br/>Body <?=$adv['type_name']?><br/><?=$adv['probeg']?> Miles</div>

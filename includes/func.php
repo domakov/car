@@ -14,15 +14,41 @@ function getNewsComment($id){
 	cn.user_id=users.id WHERE news_id=$id ORDER BY comm_create DESC";
 	return queryEasy($sql);
 }
-
+function advOne($id){
+	$sql="SELECT * FROM advert 
+			INNER JOIN volume on
+			advert.volume_id=volume.volume_id
+			INNER JOIN oil on
+			advert.oil_id=oil.oil_id
+			INNER JOIN typekyzov on
+			advert.type_id=typekyzov.id
+			INNER JOIN model ON
+			advert.model_id=model.id
+			INNER JOIN marca on
+			model.marca_id=marca.marca_id
+			INNER JOIN images ON
+			images.advert_id=advert.adv_id
+			INNER JOIN cpp ON
+			cpp.cpp_id=advert.cpp_id
+			INNER JOIN color ON
+			color.color_id=advert.color_id
+			where advert.adv_id=$id";
+ return queryEasy ($sql);
+}
 function newsOne($id){
-
 $sql="SELECT * FROM news
 		INNER JOIN users ON
 		news.user_id=users.id WHERE news_id=$id";
 	return queryEasy ($sql);
-
 }
+function aboutCar(){
+
+	$sql="SELECT * FROM news
+		INNER JOIN users ON
+		news.user_id=users.id";
+	return queryEasy ($sql);
+}
+
 function allNews(){
 
 	$sql="SELECT * FROM news
@@ -60,12 +86,16 @@ function advertAll(){
 			advert.oil_id=oil.oil_id
 			INNER JOIN typekyzov on
 			advert.type_id=typekyzov.id
-			INNER JOIN images ON
-			advert.id=images.advert_id
 			INNER JOIN model ON
 			advert.model_id=model.id
 			INNER JOIN marca on
 			model.marca_id=marca.marca_id
+			INNER JOIN images ON
+			images.advert_id=advert.adv_id
+			INNER JOIN cpp ON
+			cpp.cpp_id=advert.cpp_id
+			INNER JOIN color ON
+			color.color_id=advert.color_id
 			limit 10";
  return queryEasy ($sql);
 
