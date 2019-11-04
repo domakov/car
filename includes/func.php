@@ -89,6 +89,8 @@ function advertAll(){
 			cpp.cpp_id=advert.cpp_id
 			INNER JOIN color ON
 			color.id=advert.color_id
+			INNER JOIN country ON
+			country.country_id=advert.country_id
 			limit 10";
  return queryEasy($sql);
 
