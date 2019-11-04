@@ -528,14 +528,14 @@
 							<h2><strong>Video</strong> reviews</h2>
 							<div class="post_block">
 								<div class="preview">
-									<a href="http://player.vimeo.com/video/54510052">
+									<a href="https://www.youtube.com/watch?v=fKNdoxRld34">
 										<img src="images/placeholders/180x115.gif" alt=""/>
 										<span class="hover"></span>
 										<img src="images/video_play.png" alt="" class="video_play"/>
 									</a>
 								</div>
-								<h5><a href="#">THE IMPORTANCE OF LUXURY SUV SALES EXPLAINED</a></h5>
-								<div class="post"><p>10 min 31 sec (12,4 Mb)</p></div>
+								<h5><a href="#">LAMBORGHINI PREVIEW</a></h5>
+								<div class="post"><p>2 min 06 sec (7,4 Mb)</p></div>
 							</div>
 							<div class="post_block">
 								<div class="preview">

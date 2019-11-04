@@ -14,7 +14,7 @@ include_once ('head.php');
 					<a href="#"><img src="images/fbs_icon.png" alt=""></a>
 					<a href="#"><img src="images/twitter_icon.png" alt=""></a>
 					<a href="#"><img src="images/in_icon.png" alt=""></a>
-					<a href="http://car/13_registr.php" alt="">Registr</a>
+					<a href="../13_registr.php">Registr</a>
 				</div>
 			</div>
 			<div class="bg_navigation">
@@ -34,6 +34,9 @@ include_once ('head.php');
 						
 						<div id="search_form">
 						<form method="get" action="#">
+							<input type="text" onblur="if(this.value=='') this.
+							value='Search on site';" onfocus="if(this.value=='Search on site') this.value='';" value="Search on site" class="txb_search"/>
+							<input type="submit" value="Search" class="btn_search"/>
 						<input type="text" onblur="if(this.value=='') this.value='Search on site';" onfocus="if(this.value=='Search on site') this.value='';"value="Search on site" class="txb_search"/>
 						<a href="../sale.php"><input type="submit"  value="Search" class="btn_search"/></a>
 							
@@ -41,6 +44,7 @@ include_once ('head.php');
 								
                                    
 							
+
 						</form>
 					</div>
 				</div>
