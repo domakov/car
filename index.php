@@ -581,7 +581,7 @@ Lorem ipsum dolor sit amet, con sectetur adipisicing elit, sed do eius  mod temp
 				</div>
 			</div>
 			<div class="copyright_wrapper">
-				<div class="copyright">&copy; 2013 Auto Sale. All Rights Reserved.</div>
+				<div class="copyright">&copy; 2019 Auto Sale. All Rights Reserved.</div>
 			</div>
 		</div>
 	<!--EOF FOOTER-->
