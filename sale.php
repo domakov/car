@@ -27,7 +27,6 @@
 				<?
 					$id=$_GET['car_id'];
 					$adverts=advOne($id);
-					print_r($adverts);
 				?>
 				<div class="main_wrapper">
 					<div class="cars_id">

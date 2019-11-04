@@ -29,12 +29,14 @@ $adverts=advertAll();
 							<div class="slider slider_1">
 								<?foreach ($adverts as $adv) {?>
 								<div class="slide">
-								<img src="<?=$adv['link']?>" alt=""/>
-									<div class="description">
-										<h2 class="title"><?echo $adv['year']." "; echo $adv['marca']." "; echo $adv['model'];?> </h2>
-										<p class="desc"><span><strong>Kilometr: </strong><?=$adv['probeg']?></span><span><strong>Engine: </strong><?=$adv['volume']?></span></p>
-										<div class="price">$ <?=$adv['price']?></div>
-									</div>
+									<a href="sale.php?car_id=<?=$adv['adv_id']?>">
+									<img src="<?=$adv['link']?>" alt=""/>
+										<div class="description">
+											<h2 class="title"><?echo $adv['year']." "; echo $adv['marca']." "; echo $adv['model'];?> </h2>
+											<p class="desc"><span><strong>Kilometr: </strong><?=$adv['probeg']?></span><span><strong>Engine: </strong><?=$adv['volume']?></span></p>
+											<div class="price">$ <?=$adv['price']?></div>
+										</div>
+									</a>
 								</div>
 								<?}?>
 								
