@@ -42,6 +42,9 @@ body,form,img,h1,h2,h3,h4,h5,p,a,div,ul,li{
 input,textarea,a{
 	outline:0;
 }
+#razmer{
+	width: 185px;
+}
 body{
 	font-family: 'PTSansRegular',Arial,sans-serif;
 	font-size:13px;
