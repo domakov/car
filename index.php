@@ -29,7 +29,7 @@ $adverts=advertAll();
 							<div class="slider slider_1">
 								<?foreach ($adverts as $adv) {?>
 								<div class="slide">
-									<img src="<?=$adv['link']?>" alt=""/>
+								<img src="<?=$adv['link']?>" alt=""/>
 									<div class="description">
 										<h2 class="title"><?echo $adv['year']." "; echo $adv['marca']." "; echo $adv['model'];?> </h2>
 										<p class="desc"><span><strong>Kilometr: </strong><?=$adv['probeg']?></span><span><strong>Engine: </strong><?=$adv['volume']?></span></p>
@@ -177,7 +177,7 @@ $adverts=advertAll();
 						<?foreach ($adverts as $adv) {
 						?>
 						<div class="slide">
-							<a href="#">
+							<a href="sale.php?car_id=<?=$adv['id']?>">
 								
 								<img src="<?=$adv['link']?>" alt=""/>
 								<div class="description">Registration <?=$adv['year']?><br/>Объем <?=$adv['volume'].", ".$adv['oil_type']?><br/>230 HP<br/>Body <?=$adv['type_name']?><br/><?=$adv['probeg']?> Miles</div>
@@ -573,7 +573,7 @@ Lorem ipsum dolor sit amet, con sectetur adipisicing elit, sed do eius  mod temp
 					<h3><strong>Find</strong> us here</h3>
 					<ul class="horizontal">
 						<li><a href="#"><img src="images/fb_icon.png" alt=""></a></li>
-						<li><a href="#"><img src="images/0077.png" alt=""></a></li>
+						
 						<li><a href="#"><img src="images/in_icon.png" alt=""></a></li>
 					</ul>
 				</div>

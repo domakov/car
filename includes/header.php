@@ -1,11 +1,14 @@
+<?
+include_once ('head.php');
+?>
 <div id="header">
 			<div class="top_info">
 				<div class="logo">
-					<a href="#"><img src="images/logo_logo.png" alt=""></a>
+					<a href="index.php"><img src="images/logo_logo.png" alt=""></a>
 				</div>
 				<div class="header_contacts">
-					<div class="phone">+1 (800) 455-55-95</div>
-					<div>WinterJuice, LLC, 1875 South Grant Street, Suite 680, San Mateo, CA 94402</div>
+					<div class="phone">+7-(777)-777-77-77</div>
+					<div>Aqtobe, Qazaqstan, 030000</div>
 				</div>
 				<div class="socials">
 					<a href="#"><img src="images/fbs_icon.png" alt=""></a>
@@ -19,10 +22,10 @@
 					<div id="navigation">
 						<span>Home</span>
 						<ul>
-							<li class="current"><a href="index.php">Home</a></li>
+							<li><a href="index.php">Home</a></li>
 							<li><a href="about.php">About Us</a></li>
 							<li><a href="blog.php">Blog</a></li>
-							<li><a href="sale.php">News</a></li>
+							<li><a href="sale.php">Sale</a></li>
 							<li><a href="11_dealer.php">For Salers</a></li>
 							<li><a href="contact.php">Contacts</a></li>
 						</ul>

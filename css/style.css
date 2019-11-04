@@ -313,8 +313,12 @@ cite{
 	text-decoration: none;
 	padding: 11px 23px 0 23px;
 }
-#navigation ul li.current a,
 #navigation ul li:hover a{
+	background: url(../images/bg_menu.jpg) repeat-x 0 0;
+	color: #FFFFFF;
+	text-shadow:0 -1px 0 #00369F;
+}
+#navigation ul li.current a{
 	background: url(../images/bg_menu.jpg) repeat-x 0 0;
 	color: #FFFFFF;
 	text-shadow:0 -1px 0 #00369F;
