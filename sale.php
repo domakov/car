@@ -199,6 +199,55 @@
 						</div>
 					</div>
 					<div class="clear"></div>
+					<div class="comments">
+							<h4>Comments</h4>
+							<ul>
+						<?
+
+						$comments =	getNewsComment($id);
+						//print_r($comments);
+							if ($comments) {
+							
+							foreach ($comments as $comment) {
+								# code...
+						?>
+						
+								<li class="first">
+									<div class="wrapper">
+										<img src="images/placeholders/61x61.gif" alt=""/>
+										<div class="comment_data">
+											<div class="comment_author">
+												<div class="author">
+													
+													<?=$comment['login'];
+												?>
+													
+												</div>
+												<div class="date">
+												<?=$comment['comm_create'];
+												?></div>
+											</div>
+											<div class="comment">
+											<?=$comment['comment'];
+											?>
+												
+											</div>
+										</div>
+										
+												
+														
+										<div class="clear"></div>
+									</div>
+								</li>
+								<?}}?>
+
+							</ul>
+						</div>
+
+					
+
+
+					</div>
 					<div class="recent_cars">
 						<h2><strong>Similar</strong> offers</h2>
 						<ul>
