@@ -25,8 +25,7 @@
 					<?
 					$news=allNews();
 					foreach ($news as $post) {
-						# code...
-					//print_r($news);
+					
 					?>
 						<div class="blog_post">
 							<a href="blog_single.php?id=<?=$post['news_id']?>" class="thumb">

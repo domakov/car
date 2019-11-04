@@ -26,8 +26,10 @@
 				</div>
 				<?
 					$id=$_GET['car_id'];
+					if(!isset($id)){
+						$id=1;
+					}
 					$adverts=advOne($id);
-					print_r($adverts);
 				?>
 				<div class="main_wrapper">
 					<div class="cars_id">
