@@ -2,13 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<?include_once ('includes/head.php')?>
-	<?include_once ('includes/func.php')?>
-	
 </head>
 <body class="blog_page">
 	<!--BEGIN HEADER-->
 		<?
-		include_once ('includes/header.php');
+		include ('includes/header.php');
 		?>
 	<!--EOF HEADER-->
 	<!--BEGIN CONTENT-->
@@ -22,20 +20,15 @@
 				<div class="main_wrapper">
 					<h1><strong>Welcome</strong>  to our blog</h1>
 					<div class="blog">
-					<?
-					$news=allNews();
-					foreach ($news as $post) {
-					
-					?>
 						<div class="blog_post">
-							<a href="blog_single.php?id=<?=$post['news_id']?>" class="thumb">
-								<img src="automob/<?=$post['image']?>" alt=""/>
+							<a href="#" class="thumb">
+								<img src="images/placeholders/180x180.gif" alt=""/>
 							</a>
 							<div class="blog_desc">
-								<h4><a href="blog_single.php?id=<?=$post['news_id']?>"><?=$post['title']?></a></h4>
+								<h4><a href="#">Here comes the blog title</a></h4>
 								<div class="grey_area">
-									<a href="#" class="blog_date"><?=$post['date_create']?></a>
-									<a href="#" class="blog_author"><?=$post['login']?></a>
+									<a href="#" class="blog_date">November 1, 2012</a>
+									<a href="#" class="blog_author">Admin</a>
 									<div class="blog_category">
 										<a href="#" >Cars</a>, 
 										<a href="#" >vehicle</a>
@@ -43,17 +36,158 @@
 									<a href="#" class="blog_comments">7 Comments</a>
 								</div>
 								<div class="post">
-									<?=$post['text']?>
+									<p>Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulput ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, ni id vulputate ullamcoper lorem ipsum dolo stet.</p>
 								</div>
-								<a href="blog_single.php?id=<?=$post['news_id']?>" class="more markered">Read more</a>
+								<a href="#" class="more markered">Read more</a>
 							</div>
 						</div>
-						<?
-						}
-						?>
-						
-						
-					
+						<div class="blog_post">
+							<a href="#" class="thumb">
+								<img src="images/placeholders/180x180.gif" alt=""/>
+							</a>
+							<div class="blog_desc">
+								<h4><a href="#">Here comes the blog title</a></h4>
+								<div class="grey_area">
+									<a href="#" class="blog_date">November 1, 2012</a>
+									<a href="#" class="blog_author">Admin</a>
+									<div class="blog_category">
+										<a href="#" >Cars</a>, 
+										<a href="#" >vehicle</a>
+									</div>
+									<a href="#" class="blog_comments">7 Comments</a>
+								</div>
+								<div class="post">
+									<p>Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulput ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, ni id vulputate ullamcoper lorem ipsum dolo stet.</p>
+								</div>
+								<a href="#" class="more markered">Read more</a>
+							</div>
+						</div>
+						<div class="blog_post">
+							<a href="#" class="thumb">
+								<img src="images/placeholders/180x180.gif" alt=""/>
+							</a>
+							<div class="blog_desc">
+								<h4><a href="#">Here comes the blog title</a></h4>
+								<div class="grey_area">
+									<a href="#" class="blog_date">November 1, 2012</a>
+									<a href="#" class="blog_author">Admin</a>
+									<div class="blog_category">
+										<a href="#" >Cars</a>, 
+										<a href="#" >vehicle</a>
+									</div>
+									<a href="#" class="blog_comments">7 Comments</a>
+								</div>
+								<div class="post">
+									<p>Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulput ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, ni id vulputate ullamcoper lorem ipsum dolo stet.</p>
+								</div>
+								<a href="#" class="more markered">Read more</a>
+							</div>
+						</div>
+						<div class="blog_post">
+							<a href="#" class="thumb">
+								<img src="images/placeholders/180x180.gif" alt=""/>
+							</a>
+							<div class="blog_desc">
+								<h4><a href="#">Here comes the blog title</a></h4>
+								<div class="grey_area">
+									<a href="#" class="blog_date">November 1, 2012</a>
+									<a href="#" class="blog_author">Admin</a>
+									<div class="blog_category">
+										<a href="#" >Cars</a>, 
+										<a href="#" >vehicle</a>
+									</div>
+									<a href="#" class="blog_comments">7 Comments</a>
+								</div>
+								<div class="post">
+									<p>Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulput ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, ni id vulputate ullamcoper lorem ipsum dolo stet.</p>
+								</div>
+								<a href="#" class="more markered">Read more</a>
+							</div>
+						</div>
+						<div class="blog_post">
+							<a href="#" class="thumb">
+								<img src="images/placeholders/180x180.gif" alt=""/>
+							</a>
+							<div class="blog_desc">
+								<h4><a href="#">Here comes the blog title</a></h4>
+								<div class="grey_area">
+									<a href="#" class="blog_date">November 1, 2012</a>
+									<a href="#" class="blog_author">Admin</a>
+									<div class="blog_category">
+										<a href="#" >Cars</a>, 
+										<a href="#" >vehicle</a>
+									</div>
+									<a href="#" class="blog_comments">7 Comments</a>
+								</div>
+								<div class="post">
+									<p>Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulput ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, ni id vulputate ullamcoper lorem ipsum dolo stet.</p>
+								</div>
+								<a href="#" class="more markered">Read more</a>
+							</div>
+						</div>
+						<div class="blog_post">
+							<a href="#" class="thumb">
+								<img src="images/placeholders/180x180.gif" alt=""/>
+							</a>
+							<div class="blog_desc">
+								<h4><a href="#">Here comes the blog title</a></h4>
+								<div class="grey_area">
+									<a href="#" class="blog_date">November 1, 2012</a>
+									<a href="#" class="blog_author">Admin</a>
+									<div class="blog_category">
+										<a href="#" >Cars</a>, 
+										<a href="#" >vehicle</a>
+									</div>
+									<a href="#" class="blog_comments">7 Comments</a>
+								</div>
+								<div class="post">
+									<p>Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulput ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, ni id vulputate ullamcoper lorem ipsum dolo stet.</p>
+								</div>
+								<a href="#" class="more markered">Read more</a>
+							</div>
+						</div>
+						<div class="blog_post">
+							<a href="#" class="thumb">
+								<img src="images/placeholders/180x180.gif" alt=""/>
+							</a>
+							<div class="blog_desc">
+								<h4><a href="#">Here comes the blog title</a></h4>
+								<div class="grey_area">
+									<a href="#" class="blog_date">November 1, 2012</a>
+									<a href="#" class="blog_author">Admin</a>
+									<div class="blog_category">
+										<a href="#" >Cars</a>, 
+										<a href="#" >vehicle</a>
+									</div>
+									<a href="#" class="blog_comments">7 Comments</a>
+								</div>
+								<div class="post">
+									<p>Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulput ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, ni id vulputate ullamcoper lorem ipsum dolo stet.</p>
+								</div>
+								<a href="#" class="more markered">Read more</a>
+							</div>
+						</div>
+						<div class="blog_post">
+							<a href="#" class="thumb">
+								<img src="images/placeholders/180x180.gif" alt=""/>
+							</a>
+							<div class="blog_desc">
+								<h4><a href="#">Here comes the blog title</a></h4>
+								<div class="grey_area">
+									<a href="#" class="blog_date">November 1, 2012</a>
+									<a href="#" class="blog_author">Admin</a>
+									<div class="blog_category">
+										<a href="#" >Cars</a>, 
+										<a href="#" >vehicle</a>
+									</div>
+									<a href="#" class="blog_comments">7 Comments</a>
+								</div>
+								<div class="post">
+									<p>Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulput ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, ni id vulputate ullamcoper lorem ipsum dolo stet.</p>
+								</div>
+								<a href="#" class="more markered">Read more</a>
+							</div>
+						</div>
 						<div class="pagination">
 							<ul>
 								<li class="active"><a href="#">1</a></li>

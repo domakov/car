@@ -1,3 +1,6 @@
+<?
+include_once ('head.php');
+?>
 <div id="header">
 			<div class="top_info">
 				<div class="logo">
@@ -19,7 +22,7 @@
 					<div id="navigation">
 						<span>Home</span>
 						<ul>
-							<li class="current"><a href="index.php">Home</a></li>
+							<li><a href="index.php">Home</a></li>
 							<li><a href="about.php">About Us</a></li>
 							<li><a href="blog.php">Blog</a></li>
 							<li><a href="sale.php">Sale</a></li>
@@ -27,11 +30,21 @@
 							<li><a href="contact.php">Contacts</a></li>
 						</ul>
 					</div>
-					<div id="search_form">
+							
+						
+						<div id="search_form">
 						<form method="get" action="#">
 							<input type="text" onblur="if(this.value=='') this.
 							value='Search on site';" onfocus="if(this.value=='Search on site') this.value='';" value="Search on site" class="txb_search"/>
 							<input type="submit" value="Search" class="btn_search"/>
+						<input type="text" onblur="if(this.value=='') this.value='Search on site';" onfocus="if(this.value=='Search on site') this.value='';"value="Search on site" class="txb_search"/>
+						<a href="../sale.php"><input type="submit"  value="Search" class="btn_search"/></a>
+							
+							
+								
+                                   
+							
+
 						</form>
 					</div>
 				</div>

@@ -2,13 +2,15 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<?
-	include_once ('includes/head.php')
+	include_once ('includes/head.php');
+	include_once('includes/func.php');
 	?>
 </head>
 <body class="dealer_page">
 	<!--BEGIN HEADER-->
 		<?
 		include ('includes/header.php');
+		$adverts=advertAll();
 		?>
 	<!--EOF HEADER-->
 	<!--BEGIN CONTENT-->
@@ -38,101 +40,30 @@
 							<a href="#" class="all">view all offers</a>
 						</div>
 						<ul class="dealer_catalog">
+
+							<? foreach ($adverts as $adv){ ?>
+					
 							<li>
-								<a href="#" class="thumb"><img src="images/placeholders/165x119.gif" alt=""/></a>
+								<a href="#" class="thumb"><img id="razmer" src="<?=$adv['link']?>" alt=""/></a>
 								<div class="catalog_desc">
-									<div class="location">Location: Berlin, Germany</div>
+									<div class="location">Location:<?=$adv['city']?></div>
 									<div class="title_box">
-										<h4><a href="#">Mercedes-Benz CLS</a></h4>
-										<div class="price">54980 EURO</div>
+										<h4><a href="#"><?=$adv['marca']." "?><?=$adv['model']?></a></h4>
+										<div class="price"><?=$adv['price']." "?>EURO</div>
 									</div>
 									<div class="clear"></div>
 									<div class="grey_area">
-										<span>Registration 2002</span>
-										<span>3.0 Diesel</span>
+										<span>Registration <?=$adv['year']?></span>
+										<span><?=$adv['volume']." "?><?=$adv['oil_type']?></span>
 										<span>230 HP</span>
-										<span>Body Coupe</span>
-										<span>80 000 Miles</span>
+										<span><?=$adv['type_name']?></span>
+										<span><?=$adv['probeg']." "?>Miles</span>
 									</div>
-									<a href="#" class="more markered">View details</a>
+									<a href="sale.php?car_id=<?=$adv['adv_id']?>" class="more markered">View details</a>
 								</div>
 							</li>
-							<li>
-								<a href="#" class="thumb"><img src="images/placeholders/165x119.gif" alt=""/></a>
-								<div class="catalog_desc">
-									<div class="location">Location: Berlin, Germany</div>
-									<div class="title_box">
-										<h4><a href="#">Mercedes-Benz CLS</a></h4>
-										<div class="price">54980 EURO</div>
-									</div>
-									<div class="clear"></div>
-									<div class="grey_area">
-										<span>Registration 2002</span>
-										<span>3.0 Diesel</span>
-										<span>230 HP</span>
-										<span>Body Coupe</span>
-										<span>80 000 Miles</span>
-									</div>
-									<a href="#" class="more markered">View details</a>
-								</div>
-							</li>
-							<li>
-								<a href="#" class="thumb"><img src="images/placeholders/165x119.gif" alt=""/></a>
-								<div class="catalog_desc">
-									<div class="location">Location: Berlin, Germany</div>
-									<div class="title_box">
-										<h4><a href="#">Mercedes-Benz CLS</a></h4>
-										<div class="price">54980 EURO</div>
-									</div>
-									<div class="clear"></div>
-									<div class="grey_area">
-										<span>Registration 2002</span>
-										<span>3.0 Diesel</span>
-										<span>230 HP</span>
-										<span>Body Coupe</span>
-										<span>80 000 Miles</span>
-									</div>
-									<a href="#" class="more markered">View details</a>
-								</div>
-							</li>
-							<li>
-								<a href="#" class="thumb"><img src="images/placeholders/165x119.gif" alt=""/></a>
-								<div class="catalog_desc">
-									<div class="location">Location: Berlin, Germany</div>
-									<div class="title_box">
-										<h4><a href="#">Mercedes-Benz CLS</a></h4>
-										<div class="price">54980 EURO</div>
-									</div>
-									<div class="clear"></div>
-									<div class="grey_area">
-										<span>Registration 2002</span>
-										<span>3.0 Diesel</span>
-										<span>230 HP</span>
-										<span>Body Coupe</span>
-										<span>80 000 Miles</span>
-									</div>
-									<a href="#" class="more markered">View details</a>
-								</div>
-							</li>
-							<li>
-								<a href="#" class="thumb"><img src="images/placeholders/165x119.gif" alt=""/></a>
-								<div class="catalog_desc">
-									<div class="location">Location: Berlin, Germany</div>
-									<div class="title_box">
-										<h4><a href="#">Mercedes-Benz CLS</a></h4>
-										<div class="price">54980 EURO</div>
-									</div>
-									<div class="clear"></div>
-									<div class="grey_area">
-										<span>Registration 2002</span>
-										<span>3.0 Diesel</span>
-										<span>230 HP</span>
-										<span>Body Coupe</span>
-										<span>80 000 Miles</span>
-									</div>
-									<a href="#" class="more markered">View details</a>
-								</div>
-							</li>
+
+							<?}?>
 						</ul>
 						<div class="dealer_bottom">
 							<div class="pagination">

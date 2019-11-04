@@ -1,3 +1,4 @@
+
 <?
 $link=mysqli_connect('localhost','root','','car');
 include_once("func.php");
@@ -70,7 +71,6 @@ if(isset($_POST['registration'])){
 			<select name="add_id">
 					<?
 					$cities=fetchTable('address');
-					print_r($cities);
 					foreach ($cities as $city) {
 						?>
 						<option value="<?=$city['id']?>"><?=$city['city']?></option>
