@@ -14,6 +14,7 @@ include_once ('head.php');
 					<a href="#"><img src="images/fbs_icon.png" alt=""></a>
 					<a href="#"><img src="images/twitter_icon.png" alt=""></a>
 					<a href="#"><img src="images/in_icon.png" alt=""></a>
+					<a href="http://car/13_registr.php" alt="">Registr</a>
 				</div>
 			</div>
 			<div class="bg_navigation">
