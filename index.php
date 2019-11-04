@@ -1,3 +1,11 @@
+<?
+include_once("includes/func.php");
+
+$adverts=advertAll();
+
+?>
+
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -19,46 +27,19 @@
 					<div class="slider_wrapper">
 						<div class="home_slider">
 							<div class="slider slider_1">
+								<?foreach ($adverts as $adv) {?>
 								<div class="slide">
-									<img src="images/placeholders/620x425.gif" alt=""/>
-									<div class="description">
-										<h2 class="title">2012 Mercedes-Benz CLS 320</h2>
-										<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
-										<div class="price">$ 32 200</div>
-									</div>
+									<a href="sale.php?car_id=<?=$adv['adv_id']?>">
+									<img src="<?=$adv['link']?>" alt=""/>
+										<div class="description">
+											<h2 class="title"><?echo $adv['year']." "; echo $adv['marca']." "; echo $adv['model'];?> </h2>
+											<p class="desc"><span><strong>Kilometr: </strong><?=$adv['probeg']?></span><span><strong>Engine: </strong><?=$adv['volume']?></span></p>
+											<div class="price">$ <?=$adv['price']?></div>
+										</div>
+									</a>
 								</div>
-								<div class="slide">
-									<img src="images/placeholders/620x425.gif" alt=""/>
-									<div class="description">
-										<h2 class="title">2010 Mercedes-Benz Sport</h2>
-										<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
-										<div class="price">$ 32 200</div>
-									</div>
-								</div>
-								<div class="slide">
-									<img src="images/placeholders/620x425.gif" alt=""/>
-									<div class="description">
-										<h2 class="title">2002 Subaru Impreza</h2>
-										<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
-										<div class="price">$ 32 200</div>
-									</div>
-								</div>
-								<div class="slide">
-									<img src="images/placeholders/620x425.gif" alt=""/>
-									<div class="description">
-										<h2 class="title">2012 Cadillac LaBaron</h2>
-										<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
-										<div class="price">$ 32 200</div>
-									</div>
-								</div>
-								<div class="slide">
-									<img src="images/placeholders/620x425.gif" alt=""/>
-									<div class="description">
-										<h2 class="title">2012 Ferrari Maranello 320</h2>
-										<p class="desc"><span><strong>Miles: </strong>25,000</span><span><strong>Engine: </strong>2.6</span></p>
-										<div class="price">$ 32 200</div>
-									</div>
-								</div>
+								<?}?>
+								
 							</div>
 						</div>
 					</div>
@@ -195,106 +176,36 @@
 				<div class="recent">
 					<h2><strong>Recent</strong> listings</h2>
 					<div class="recent_carousel">
+						<?foreach ($adverts as $adv) {
+						?>
 						<div class="slide">
-							<a href="#">
-								<img src="images/placeholders/220x164.gif" alt=""/>
-								<div class="description">Registration 2010<br/>3.0 Diesel<br/>230 HP<br/>Body Coupe<br/>80 000 Miles</div>
-								<div class="title">Mercedes-Benz <span class="price">$ 115 265</span></div>
+							<a href="sale.php?car_id=<?=$adv['adv_id']?>">
+								
+								<img src="<?=$adv['link']?>" alt=""/>
+								<div class="description">Registration <?=$adv['year']?><br/>Объем <?=$adv['volume'].", ".$adv['oil_type']?><br/>230 HP<br/>Body <?=$adv['type_name']?><br/><?=$adv['probeg']?> Miles</div>
+								<div class="title"><?=$adv['marca']?> <span class="price"><?=$adv['price']?></span></div>
+
 							</a>
 						</div>
-						<div class="slide">
-							<a href="#">
-								<img src="images/placeholders/220x164.gif" alt=""/>
-								<div class="description">Registration 2010<br/>3.0 Diesel<br/>230 HP<br/>Body Coupe<br/>80 000 Miles</div>
-								<div class="title">Mercedes-Benz <span class="price">$ 115 265</span></div>
-							</a>
-						</div>
-						<div class="slide">
-							<a href="#">
-								<img src="images/placeholders/220x164.gif" alt=""/>
-								<div class="description">Registration 2010<br/>3.0 Diesel<br/>230 HP<br/>Body Coupe<br/>80 000 Miles</div>
-								<div class="title">Mercedes-Benz <span class="price">$ 115 265</span></div>
-							</a>
-						</div>
-						<div class="slide">
-							<a href="#">
-								<img src="images/placeholders/220x164.gif" alt=""/>
-								<div class="description">Registration 2010<br/>3.0 Diesel<br/>230 HP<br/>Body Coupe<br/>80 000 Miles</div>
-								<div class="title">Mercedes-Benz <span class="price">$ 115 265</span></div>
-							</a>
-						</div>
-						<div class="slide">
-							<a href="#">
-								<img src="images/placeholders/220x164.gif" alt=""/>
-								<div class="description">Registration 2010<br/>3.0 Diesel<br/>230 HP<br/>Body Coupe<br/>80 000 Miles</div>
-								<div class="title">Mercedes-Benz <span class="price">$ 115 265</span></div>
-							</a>
-						</div>
-						<div class="slide">
-							<a href="#">
-								<img src="images/placeholders/220x164.gif" alt=""/>
-								<div class="description">Registration 2010<br/>3.0 Diesel<br/>230 HP<br/>Body Coupe<br/>80 000 Miles</div>
-								<div class="title">Mercedes-Benz <span class="price">$ 115 265</span></div>
-							</a>
-						</div>
-						<div class="slide">
-							<a href="#">
-								<img src="images/placeholders/220x164.gif" alt=""/>
-								<div class="description">Registration 2010<br/>3.0 Diesel<br/>230 HP<br/>Body Coupe<br/>80 000 Miles</div>
-								<div class="title">Mercedes-Benz <span class="price">$ 115 265</span></div>
-							</a>
-						</div>
-						<div class="slide">
-							<a href="#">
-								<img src="images/placeholders/220x164.gif" alt=""/>
-								<div class="description">Registration 2010<br/>3.0 Diesel<br/>230 HP<br/>Body Coupe<br/>80 000 Miles</div>
-								<div class="title">Mercedes-Benz <span class="price">$ 115 265</span></div>
-							</a>
-						</div>
-						<div class="slide">
-							<a href="#">
-								<img src="images/placeholders/220x164.gif" alt=""/>
-								<div class="description">Registration 2010<br/>3.0 Diesel<br/>230 HP<br/>Body Coupe<br/>80 000 Miles</div>
-								<div class="title">Mercedes-Benz <span class="price">$ 115 265</span></div>
-							</a>
-						</div>
-						<div class="slide">
-							<a href="#">
-								<img src="images/placeholders/220x164.gif" alt=""/>
-								<div class="description">Registration 2010<br/>3.0 Diesel<br/>230 HP<br/>Body Coupe<br/>80 000 Miles</div>
-								<div class="title">Mercedes-Benz <span class="price">$ 115 265</span></div>
-							</a>
-						</div>
-						<div class="slide">
-							<a href="#">
-								<img src="images/placeholders/220x164.gif" alt=""/>
-								<div class="description">Registration 2010<br/>3.0 Diesel<br/>230 HP<br/>Body Coupe<br/>80 000 Miles</div>
-								<div class="title">Mercedes-Benz <span class="price">$ 115 265</span></div>
-							</a>
-						</div>
-						<div class="slide">
-							<a href="#">
-								<img src="images/placeholders/220x164.gif" alt=""/>
-								<div class="description">Registration 2010<br/>3.0 Diesel<br/>230 HP<br/>Body Coupe<br/>80 000 Miles</div>
-								<div class="title">Mercedes-Benz <span class="price">$ 115 265</span></div>
-							</a>
-						</div>
+						<?}?>
 					</div>
 				</div>
+				<?
+				print_r($res); ?>
 				<div class="banners">
 					<div class="banner_1 main_banner">
 						<div class="text_wrapper">
 							<p class="title"><strong>Looking</strong> for a car?</p>
 							<p class="desc">1.000 new offers every day. 35.000 offers on site</p>
 						</div>
-						<a href="#">Search</a>
+						<a href="11_dealer.php">Search</a>
 					</div>
 					<div class="banner_2 main_banner">
 						<div class="text_wrapper">
 							<p class="title"><strong>Want</strong> to sell a car?</p>
 							<p class="desc">200.000 visitors every day. Add your offer now!</p>
 						</div>
-						<a href="#">Sell</a>
+						<a href="sale.php">Sell</a>
 					</div>
 				</div>
 				<div class="wrapper_2">
@@ -303,7 +214,7 @@
 							<h2><strong>Recent</strong> from the blog</h2>
 							<div class="post_block">
 								<a href="#" class="thumb"><img src="images/placeholders/180x135.gif" alt=""/></a>
-								<h5><a href="#">THE IMPORTANCE OF LUXURY SUV SALES EXPLAINED</a></h5>
+								<h5><a href="#">LAMBORGHINI PREVIEW</a></h5>
 								<div class="date">November 1, 2012 </div>
 								<div class="post"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... Aliquam hendrerit sagittis urna,</p></div>
 							</div>
@@ -497,36 +408,36 @@
 							<h2><strong>Video</strong> reviews</h2>
 							<div class="post_block">
 								<div class="preview">
-									<a href="http://player.vimeo.com/video/54510052">
-										<img src="images/placeholders/180x115.gif" alt=""/>
+									<a href="https://www.ign.com/videos/2015/03/30/driveclub-lamborghini-aventador-preview">
+										<img src="images/placeholders/4.gif" alt=""/> 
 										<span class="hover"></span>
 										<img src="images/video_play.png" alt="" class="video_play"/>
 									</a>
 								</div>
-								<h5><a href="#">THE IMPORTANCE OF LUXURY SUV SALES EXPLAINED</a></h5>
-								<div class="post"><p>10 min 31 sec (12,4 Mb)</p></div>
+								<h5><a href="#">lamborghini preview</a></h5>
+								<div class="post"><p>2 min 6 sec (12,4 Mb)</p></div>
 							</div>
 							<div class="post_block">
 								<div class="preview">
-									<a href="http://player.vimeo.com/video/13412780">
-										<img src="images/placeholders/180x115.gif" alt=""/>
+									<a href="https://www.press.bmwgroup.com/deutschland/video/detail/PF0006452/the-first-ever-bmw-x7-%E2%80%93-online-trailer">
+										<img src="images/placeholders/4.gif" alt=""/>
 										<span class="hover"></span>
 										<img src="images/video_play.png" alt="" class="video_play"/>
 									</a>
 								</div>
-								<h5><a href="#">THE IMPORTANCE OF LUXURY SUV SALES EXPLAINED</a></h5>
-								<div class="post"><p>10 min 31 sec (12,4 Mb)</p></div>
+								<h5><a href="#">BMW X7 PREVIEW</a></h5>
+								<div class="post"><p>8 min 31 sec (8,1 Mb)</p></div>
 							</div>
 							<div class="post_block last">
 								<div class="preview">
 									<a href="http://player.vimeo.com/video/22884674">
-										<img src="images/placeholders/180x115.gif" alt=""/>
+										<img src="images/placeholders/4.gif" alt=""/>
 										<span class="hover"></span>
 										<img src="images/video_play.png" alt="" class="video_play"/>
 									</a>
 								</div>
-								<h5><a href="#">THE IMPORTANCE OF LUXURY SUV SALES EXPLAINED</a></h5>
-								<div class="post"><p>10 min 31 sec (12,4 Mb)</p></div>
+								<h5><a href="#">MERCEDEZ BENS c300 PREVIEW</a></h5>
+								<div class="post"><p>6 min 14 sec (10,4 Mb)</p></div>
 							</div>
 							<div class="clear"></div>
 						</div>
@@ -537,20 +448,20 @@
 								<h2><strong>Auto</strong> news</h2>
 								<div class="news_box">
 									<a href="#" class="thumb">
-										<img src="images/placeholders/180x135.gif" alt=""/>
+										<img src="http://www.nemiga.info/auto/avtosalon/lamborghini_veneno.jpeg" alt=""/>
 									</a>
-									<h5><a href="#">UNOFFICIAL PORSCHE 918 SPYDER PRICING POPS UP</a></h5>
-									<div class="date">November 1, 2012 </div>
+									<h5><a href="#">lamborghini_veneno</a></h5>
+									<div class="date">08.07.2019 </div>
 									<div class="post">
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... </p>
 									</div>
 								</div>
 								<div class="news_box bottom">
 									<a href="#" class="thumb">
-										<img src="images/placeholders/180x135.gif" alt=""/>
+										<img src="https://cdn25.img.ria.ru/images/155630/04/1556300420_40:343:3071:2048_600x0_80_0_0_353f90405e29707682eb26884afd9095.jpg" alt=""/>
 									</a>
-									<h5><a href="#">UNOFFICIAL PORSCHE 918 SPYDER PRICING POPS UP</a></h5>
-									<div class="date">November 1, 2012 </div>
+									<h5><a href="#">aurus</a></h5>
+									<div class="date">08.09.2019 </div>
 									<div class="post">
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... </p>
 									</div>
@@ -622,9 +533,9 @@ Lorem ipsum dolor sit amet, con sectetur adipisicing elit, sed do eius  mod temp
 					<div class="fwidget_separator"></div>
 					<div class="f_widget third">
 						<h3><strong>Our</strong> contacts</h3>
-						<div class="f_contact f_contact_1"><strong>Address Info:<br/></strong>Lorem ipsum Dolor sit amet, 658 Consectetur, Adipisicing 56 D</div>
-						<div class="f_contact f_contact_2"><strong>Phone:</strong> +1 (234) 567-8901 <br/><strong>FAX:</strong> +1 (234) 567-8902</div>
-						<div class="f_contact f_contact_3"><strong>Email:</strong> <a href="mailto:#">testmail@sitename.com</a></div>
+						<div class="f_contact f_contact_1"><strong>Address Info:<br/></strong>Aqtobe, Qazaqstan 030000</div>
+						<div class="f_contact f_contact_2"><strong>Phone:</strong> +1 (234) 567-8901 <br/><strong>FAX:</strong> +7-(777)-777-77-77</div>
+						<div class="f_contact f_contact_3"><strong>Email:</strong> <a href="mailto:#">301is@gmail.com</a></div>
 					</div>
 					<div class="f_widget divide last frame_wrapper">
 						<iframe width="204" height="219" src="https://maps.google.com.ua/maps?f=q&amp;source=s_q&amp;hl=ruamp;hl=en&amp;geocode=&amp;q=%D0%9C%D0%B0%D0%BD%D1%85%D1%8D%D1%82%D1%82%D0%B5%D0%BD,+%D0%9D%D1%8C%D1%8E-%D0%99%D0%BE%D1%80%D0%BA,+%D0%A1%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5+%D0%A8%D1%82%D0%B0%D1%82%D1%8B+%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B8&amp;aq=0&amp;oq=%D0%BC%D0%B0%D0%BD%D1%85&amp;sll=48.382803,31.17461&amp;sspn=7.573826,21.643066&amp;ie=UTF8&amp;hq=&amp;hnear=%D0%9C%D0%B0%D0%BD%D1%85%D1%8D%D1%82%D1%82%D0%B5%D0%BD,+%D0%9D%D1%8C%D1%8E-%D0%99%D0%BE%D1%80%D0%BA,+%D0%9D%D1%8C%D1%8E+%D0%99%D0%BE%D1%80%D0%BA,+%D0%9D%D1%8C%D1%8E-%D0%99%D0%BE%D1%80%D0%BA,+%D0%A1%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D1%91%D0%BD%D0%BD%D1%8B%D0%B5+%D0%A8%D1%82%D0%B0%D1%82%D1%8B+%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B8&amp;t=m&amp;ll=40.79042,-73.959961&amp;spn=0.113849,0.139389&amp;z=11&amp;iwloc=A&amp;output=embed"></iframe>
@@ -664,7 +575,7 @@ Lorem ipsum dolor sit amet, con sectetur adipisicing elit, sed do eius  mod temp
 					<h3><strong>Find</strong> us here</h3>
 					<ul class="horizontal">
 						<li><a href="#"><img src="images/fb_icon.png" alt=""></a></li>
-						<li><a href="#"><img src="images/twitter_icon.png" alt=""></a></li>
+						
 						<li><a href="#"><img src="images/in_icon.png" alt=""></a></li>
 					</ul>
 				</div>

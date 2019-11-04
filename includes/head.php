@@ -36,3 +36,4 @@
 	<script type="text/javascript" src="js/jquery.countdown.js"></script>
 	<script type="text/javascript" src="js/jquery.checkbox.js"></script>
 	<script type="text/javascript" src="js/js.js"></script>
+	<link rel="shortcut icon" href="images/0000.png">

@@ -11,6 +11,9 @@
 		include ('includes/header.php');
 		?>
 	<!--EOF HEADER-->
+	<?
+			include_once("includes/registration.php");
+			?>
 		<!--BEGIN FOOTER-->
 		<div id="footer">
 			<div class="bg_top_footer">
@@ -66,6 +69,7 @@ Lorem ipsum dolor sit amet, con sectetur adipisicing elit, sed do eius  mod temp
 					</div>
 				</div>
 			</div>
+
 			<div class="bottom_footer">
 				<div class="f_widget ">
 					<h3><strong>About</strong> us</h3>

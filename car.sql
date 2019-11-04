@@ -66,8 +66,8 @@ REPLACE INTO `advert` (`id`, `user_id`, `marca_id`, `model_id`, `year`, `type_id
 	(1, 4, 2, 4, '2019', 4, 1, 0, 4, 'ПРАДАЮ МАШИНА БЫСТРО', 1, 3, 3, 15000, 100000, 3, 152),
 	(2, 2, 2, 4, '2019', 4, 1, 0, 4, 'ПРАДАЮ МАШИНА БЫСТРО Я куралай', 1, 3, 3, 15000, 250000, 3, 596),
 	(3, 2, 2, 13, '2019', 3, 4, 2, 2, 'ПРАДАЮ МАШИНА БЫСТРО дорого', 1, 3, 3, 12000, 1200000, 1, 1459),
-	(4, 5, 6, 5, '2015', 4, 1, 3, 1, 'ПРАДАЮ МАШИНА БЫСТРО Я куралай', 1, 2, 3, 19000, 180000, 3, 0),
-	(5, 2, 7, 4, '2017', 4, 1, 0, 4, 'ПРАДАЮ МАШИНА БЫСТРО Я куралай', 1, 2, 3, 15000, 300000, 3, 0),
+	(4, 5, 6, 5, '2015', 1, 1, 3, 1, 'ПРАДАЮ МАШИНА БЫСТРО Я куралай', 1, 2, 3, 19000, 180000, 3, 0),
+	(5, 2, 7, 4, '2017', 2, 1, 0, 4, 'ПРАДАЮ МАШИНА БЫСТРО Я кура', 1, 2, 3, 15000, 300000, 3, 0),
 	(6, 11, 3, 13, '2012', 3, 4, 2, 2, 'ПРАДАЮ МАШИНА БЫСТРО дорого', 1, 3, 3, 12000, 1200000, 1, 0);
 /*!40000 ALTER TABLE `advert` ENABLE KEYS */;
 
@@ -109,6 +109,34 @@ REPLACE INTO `comments` (`id`, `comment`, `date_time`, `advert_id`, `user_id`) V
 	(5, '4545', NULL, 1, 2),
 	(6, 'fghfhgf', NULL, 1, 2);
 /*!40000 ALTER TABLE `comments` ENABLE KEYS */;
+
+-- Дамп структуры для таблица car.comment_news
+CREATE TABLE IF NOT EXISTS `comment_news` (
+  `cn_id` int(11) NOT NULL AUTO_INCREMENT,
+  `comment` text,
+  `user_id` int(11) NOT NULL DEFAULT '0',
+  `news_id` int(11) NOT NULL DEFAULT '0',
+  `comm_create` datetime DEFAULT NULL,
+  PRIMARY KEY (`cn_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
+
+-- Дамп данных таблицы car.comment_news: ~13 rows (приблизительно)
+/*!40000 ALTER TABLE `comment_news` DISABLE KEYS */;
+REPLACE INTO `comment_news` (`cn_id`, `comment`, `user_id`, `news_id`, `comm_create`) VALUES
+	(1, 'Кузов хоорош', 9, 2, '2019-10-30 12:09:14'),
+	(2, 'Машина ОГОНЬ', 13, 3, '2019-10-30 12:09:14'),
+	(3, 'Продам куру дешево даже бесплатно', 12, 1, '2019-10-30 12:09:14'),
+	(4, 'Кузов хоорош', 9, 2, '2019-10-30 12:09:14'),
+	(5, 'Машина ОГОНЬ', 13, 3, '2019-10-30 12:09:14'),
+	(6, 'Продам куру дешево даже бесплатно', 12, 1, '2019-10-30 12:09:14'),
+	(8, 'fasafafsasff', 9, 3, '2019-10-31 09:34:52'),
+	(9, 'gsgsdssgsdgsdg', 9, 1, '2019-10-31 09:34:53'),
+	(10, '456465645', 9, 1, NULL),
+	(11, '\r\n45\r\n45\r\n', 9, 1, '2019-10-31 09:34:50'),
+	(12, '674564', 9, 1, NULL),
+	(13, '64656', 9, 1, '2019-10-31 09:34:51'),
+	(14, 'ffsdfa', 9, 1, NULL);
+/*!40000 ALTER TABLE `comment_news` ENABLE KEYS */;
 
 -- Дамп структуры для таблица car.copy_country
 CREATE TABLE IF NOT EXISTS `copy_country` (
@@ -171,14 +199,23 @@ CREATE TABLE IF NOT EXISTS `images` (
   `link` varchar(255) NOT NULL DEFAULT '',
   `advert_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 
--- Дамп данных таблицы car.images: ~3 rows (приблизительно)
+-- Дамп данных таблицы car.images: ~12 rows (приблизительно)
 /*!40000 ALTER TABLE `images` DISABLE KEYS */;
 REPLACE INTO `images` (`id`, `link`, `advert_id`) VALUES
-	(1, 'images/1.jpg', 2),
-	(2, 'images/2.jpg', 3),
-	(3, 'images/2.jpg', 2);
+	(1, 'automob/karl.jpg', 2),
+	(2, 'automob/karl.jpg', 3),
+	(3, 'automob/karl.jpg', 2),
+	(4, 'automob/i8.jpg', 3),
+	(5, 'automob/karl.jpg', 6),
+	(6, 'automob/lc.jpg', 1),
+	(7, 'automob/lx570.jpg', 8),
+	(8, 'automob/rio.jpg', 9),
+	(9, 'automob/semi.jpg', 10),
+	(10, 'automob/tesla_s.jpg', 11),
+	(11, 'automob/tesla_x.jpg', 12),
+	(12, 'automob/x5.jpg', 13);
 /*!40000 ALTER TABLE `images` ENABLE KEYS */;
 
 -- Дамп структуры для таблица car.marca
@@ -233,6 +270,27 @@ REPLACE INTO `model` (`id`, `model`, `marca_id`) VALUES
 	(14, 'RX300', 90),
 	(15, 'M5', 1);
 /*!40000 ALTER TABLE `model` ENABLE KEYS */;
+
+-- Дамп структуры для таблица car.news
+CREATE TABLE IF NOT EXISTS `news` (
+  `news_id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(1000) NOT NULL,
+  `text` text NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `image` varchar(255) NOT NULL,
+  `date_create` datetime NOT NULL,
+  PRIMARY KEY (`news_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+
+-- Дамп данных таблицы car.news: ~5 rows (приблизительно)
+/*!40000 ALTER TABLE `news` DISABLE KEYS */;
+REPLACE INTO `news` (`news_id`, `title`, `text`, `user_id`, `image`, `date_create`) VALUES
+	(1, 'Here comes the blog title', 'ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulput ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, ni id vulputate ullamcoper lorem ipsum dolo stet.', 5, 'camry70.jpg', '2019-10-30 09:25:05'),
+	(2, 'Here comes the blog title', '4545Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulput ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, ni id vulputate ullamcoper lorem ipsum dolo stet.', 2, 'camry70.jpg', '2019-10-30 09:25:05'),
+	(3, 'Here comes the blog title', 'Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulput ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, ni id vulputate ullamcoper lorem ipsum dolo stet.', 2, 'camry70.jpg', '2019-10-30 09:25:05'),
+	(4, 'Here comes the blog title', 'Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulput ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, ni id vulputate ullamcoper lorem ipsum dolo stet.', 2, 'camry70.jpg', '2019-10-30 09:25:05'),
+	(5, 'Here comes the blog title', 'Lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, nisi id vulput ullamcoper lorem ipsum dolo stet consectetur adipiscing elit. Vestibulu dictum, ni id vulputate ullamcoper lorem ipsum dolo stet.', 2, 'camry70.jpg', '2019-10-30 09:25:05');
+/*!40000 ALTER TABLE `news` ENABLE KEYS */;
 
 -- Дамп структуры для таблица car.oil
 CREATE TABLE IF NOT EXISTS `oil` (
@@ -290,23 +348,23 @@ CREATE TABLE IF NOT EXISTS `test` (
 /*!40000 ALTER TABLE `test` DISABLE KEYS */;
 /*!40000 ALTER TABLE `test` ENABLE KEYS */;
 
--- Дамп структуры для таблица car.type-kyzov
-CREATE TABLE IF NOT EXISTS `type-kyzov` (
+-- Дамп структуры для таблица car.typekyzov
+CREATE TABLE IF NOT EXISTS `typekyzov` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `type_name` varchar(50) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
--- Дамп данных таблицы car.type-kyzov: ~6 rows (приблизительно)
-/*!40000 ALTER TABLE `type-kyzov` DISABLE KEYS */;
-REPLACE INTO `type-kyzov` (`id`, `type_name`) VALUES
+-- Дамп данных таблицы car.typekyzov: ~6 rows (приблизительно)
+/*!40000 ALTER TABLE `typekyzov` DISABLE KEYS */;
+REPLACE INTO `typekyzov` (`id`, `type_name`) VALUES
 	(1, 'Седан'),
 	(2, 'Хэтчбэк'),
 	(3, 'Джип'),
 	(4, 'Кроссовер'),
 	(5, 'Микроавтобус'),
 	(6, 'Минивен');
-/*!40000 ALTER TABLE `type-kyzov` ENABLE KEYS */;
+/*!40000 ALTER TABLE `typekyzov` ENABLE KEYS */;
 
 -- Дамп структуры для таблица car.users
 CREATE TABLE IF NOT EXISTS `users` (

@@ -22,7 +22,7 @@
 								<div class="slide">
 									<img src="images/placeholders/620x425.gif" alt=""/>
 									<div class="description">
-										<h2 class="title">2012 Mercedes-Benz CLS 320</h2>
+										<h2 class="tit  CLS 320</h2>
 										<p class="desc"><span><strong>Miles: </strong>8,025</span><span><strong>Engine: </strong>2.0</span></p>
 										<div class="price">$ 19 999</div>
 									</div>
@@ -228,8 +228,8 @@
 					<div class="recent_carousel">
 						<div class="slide">
 							<a href="#">
-								<img src="images/placeholders/220x164.gif" alt=""/>
-								<div class="description">Registration 2010<br/>3.0 Diesel<br/>230 HP<br/>Body Coupe<br/>80 000 Miles</div>
+								<img src="https://cdn2.autoexpress.co.uk/sites/autoexpressuk/files/2019/09/image_from_ios_9.jpg" alt=""/>
+								<div class="description">Registration 2019<br/>3.0 Diesel<br/>230 HP<br/>Body Coupe<br/>80 000 Miles</div>
 								<div class="title">Mercedes-Benz <span class="price">$ 115 265</span></div>
 							</a>
 						</div>
@@ -528,14 +528,14 @@
 							<h2><strong>Video</strong> reviews</h2>
 							<div class="post_block">
 								<div class="preview">
-									<a href="http://player.vimeo.com/video/54510052">
+									<a href="https://www.youtube.com/watch?v=fKNdoxRld34">
 										<img src="images/placeholders/180x115.gif" alt=""/>
 										<span class="hover"></span>
 										<img src="images/video_play.png" alt="" class="video_play"/>
 									</a>
 								</div>
-								<h5><a href="#">THE IMPORTANCE OF LUXURY SUV SALES EXPLAINED</a></h5>
-								<div class="post"><p>10 min 31 sec (12,4 Mb)</p></div>
+								<h5><a href="#">LAMBORGHINI PREVIEW</a></h5>
+								<div class="post"><p>2 min 06 sec (7,4 Mb)</p></div>
 							</div>
 							<div class="post_block">
 								<div class="preview">
@@ -568,22 +568,22 @@
 								<h2><strong>Auto</strong> news</h2>
 								<div class="news_box">
 									<a href="#" class="thumb">
-										<img src="images/placeholders/180x135.gif" alt=""/>
+										<img src="https://s3-prod.autonews.com/s3fs-public/styles/width_792/public/RETAIL01_303029955_AR_-1_MCRXZCRAULWJ_0.jpg" alt=""/>
 									</a>
-									<h5><a href="#">UNOFFICIAL PORSCHE 918 SPYDER PRICING POPS UP</a></h5>
-									<div class="date">November 1, 2012 </div>
+									<h5><a href="#">Ford to lay off 450 workers in Canada as Flex production ends</a></h5>
+									<div class="date">October 29, 2019 </div>
 									<div class="post">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... </p>
+										<p>TORONTO — About 450 workers at Ford Motor Co.’s Oakville assembly plant in Canada will be laid off by early 2020 after the automaker ends production of the Ford Flex there. </p>
 									</div>
 								</div>
 								<div class="news_box bottom">
 									<a href="#" class="thumb">
-										<img src="images/placeholders/180x135.gif" alt=""/>
+										<img src="https://s3-prod.autonews.com/s3fs-public/styles/width_792/public/Porsche-MAIN_i.jpg" alt=""/>
 									</a>
-									<h5><a href="#">UNOFFICIAL PORSCHE 918 SPYDER PRICING POPS UP</a></h5>
-									<div class="date">November 1, 2012 </div>
+									<h5><a href="#">Porsche to try out online sales</a></h5>
+									<div class="date">October 29, 2019 </div>
 									<div class="post">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... </p>
+										<p>Porsche is launching online car sales in the U.S. in a nod to shifting consumer shopping preferences. The pilot project with 25 dealers allows customers to shop vehicle inventory and complete paperwork online. </p>
 									</div>
 								</div>
 								<div class="all_wrapper"><a href="#" class="all_news">All news</a></div>

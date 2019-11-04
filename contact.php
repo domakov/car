@@ -24,10 +24,10 @@
 					<div class="contacts_box">
 						<div class="left">
 							<h3><strong>Contact</strong> details</h3>
-							<div class="addr detail">Berlin, Germany, nr. 250330,<br/>main street</div>
-							<div class="phones detail">0040 742 016 756<br/>0040 742 016 756</div>
-							<div class="email detail single_line"><a href="mailto:#" class="markered">office@autodealer.com</a></div>
-							<div class="web detail single_line"><a href="#">http://www.autodealer.com</a></div>
+							<div class="addr detail">Aqtobe, Qazaqstan, nr. 030000,<br/>main street</div>
+							<div class="phones detail">+7-(777)-777-77-77<br/>+7-(777)-555-55-55</div>
+							<div class="email detail single_line"><a href="mailto:#" class="markered">301is@gmail.com</a></div>
+							<div class="web detail single_line"><a href="#">http://www.301is-auto.kz</a></div>
 						</div>
 						<div class="map">
 							<div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
