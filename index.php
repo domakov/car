@@ -1,3 +1,4 @@
+
 <?
 include_once("includes/func.php");
 
@@ -573,7 +574,7 @@ Lorem ipsum dolor sit amet, con sectetur adipisicing elit, sed do eius  mod temp
 					<h3><strong>Find</strong> us here</h3>
 					<ul class="horizontal">
 						<li><a href="#"><img src="images/fb_icon.png" alt=""></a></li>
-						
+					
 						<li><a href="#"><img src="images/in_icon.png" alt=""></a></li>
 					</ul>
 				</div>

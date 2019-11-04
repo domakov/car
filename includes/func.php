@@ -30,6 +30,13 @@ function allNews(){
 		news.user_id=users.id";
 	return queryEasy ($sql);
 }
+function allNewss(){
+
+	$sql="SELECT * FROM news
+		INNER JOIN users ON
+		news.user_id=users.id";
+	return queryEasy ($sql);
+}
 
 function fetchAllTables($table, $table1, $key, $key1){
 
@@ -63,6 +70,7 @@ function advertAll(){
  return queryEasy ($sql);
 
 }
+
 function queryEasy ($query){
 	global $link;
 	$res=mysqli_query($link, $query);
