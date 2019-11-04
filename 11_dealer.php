@@ -46,7 +46,7 @@
 							<li>
 								<a href="#" class="thumb"><img id="razmer" src="<?=$adv['link']?>" alt=""/></a>
 								<div class="catalog_desc">
-									<div class="location">Location:<?=$adv['city']?></div>
+									<div class="location">Location:<?=$adv['country_name']?></div>
 									<div class="title_box">
 										<h4><a href="#"><?=$adv['marca']." "?><?=$adv['model']?></a></h4>
 										<div class="price"><?=$adv['price']." "?>EURO</div>

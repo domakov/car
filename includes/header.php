@@ -37,8 +37,6 @@ include_once ('head.php');
 							<input type="text" onblur="if(this.value=='') this.
 							value='Search on site';" onfocus="if(this.value=='Search on site') this.value='';" value="Search on site" class="txb_search"/>
 							<input type="submit" value="Search" class="btn_search"/>
-						<input type="text" onblur="if(this.value=='') this.value='Search on site';" onfocus="if(this.value=='Search on site') this.value='';"value="Search on site" class="txb_search"/>
-						<a href="../sale.php"><input type="submit"  value="Search" class="btn_search"/></a>
 							
 							
 								
