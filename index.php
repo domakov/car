@@ -446,20 +446,20 @@ $adverts=advertAll();
 								<h2><strong>Auto</strong> news</h2>
 								<div class="news_box">
 									<a href="#" class="thumb">
-										<img src="images/placeholders/180x135.gif" alt=""/>
+										<img src="http://www.nemiga.info/auto/avtosalon/lamborghini_veneno.jpeg" alt=""/>
 									</a>
-									<h5><a href="#">UNOFFICIAL PORSCHE 918 SPYDER PRICING POPS UP</a></h5>
-									<div class="date">November 1, 2012 </div>
+									<h5><a href="#">lamborghini_veneno</a></h5>
+									<div class="date">08.07.2019 </div>
 									<div class="post">
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... </p>
 									</div>
 								</div>
 								<div class="news_box bottom">
 									<a href="#" class="thumb">
-										<img src="images/placeholders/180x135.gif" alt=""/>
+										<img src="https://cdn25.img.ria.ru/images/155630/04/1556300420_40:343:3071:2048_600x0_80_0_0_353f90405e29707682eb26884afd9095.jpg" alt=""/>
 									</a>
-									<h5><a href="#">UNOFFICIAL PORSCHE 918 SPYDER PRICING POPS UP</a></h5>
-									<div class="date">November 1, 2012 </div>
+									<h5><a href="#">aurus</a></h5>
+									<div class="date">08.09.2019 </div>
 									<div class="post">
 										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... </p>
 									</div>
