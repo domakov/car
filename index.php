@@ -196,14 +196,14 @@ $adverts=advertAll();
 							<p class="title"><strong>Looking</strong> for a car?</p>
 							<p class="desc">1.000 new offers every day. 35.000 offers on site</p>
 						</div>
-						<a href="#">Search</a>
+						<a href="11_dealer.php">Search</a>
 					</div>
 					<div class="banner_2 main_banner">
 						<div class="text_wrapper">
 							<p class="title"><strong>Want</strong> to sell a car?</p>
 							<p class="desc">200.000 visitors every day. Add your offer now!</p>
 						</div>
-						<a href="#">Sell</a>
+						<a href="sale.php">Sell</a>
 					</div>
 				</div>
 				<div class="wrapper_2">
@@ -212,7 +212,7 @@ $adverts=advertAll();
 							<h2><strong>Recent</strong> from the blog</h2>
 							<div class="post_block">
 								<a href="#" class="thumb"><img src="images/placeholders/180x135.gif" alt=""/></a>
-								<h5><a href="#">THE IMPORTANCE OF LUXURY SUV SALES EXPLAINED</a></h5>
+								<h5><a href="#">LAMBORGHINI PREVIEW</a></h5>
 								<div class="date">November 1, 2012 </div>
 								<div class="post"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit... Aliquam hendrerit sagittis urna,</p></div>
 							</div>
@@ -406,36 +406,36 @@ $adverts=advertAll();
 							<h2><strong>Video</strong> reviews</h2>
 							<div class="post_block">
 								<div class="preview">
-									<a href="http://player.vimeo.com/video/54510052">
-										<img src="images/placeholders/180x115.gif" alt=""/>
+									<a href="https://www.ign.com/videos/2015/03/30/driveclub-lamborghini-aventador-preview">
+										<img src="images/placeholders/4.gif" alt=""/> 
 										<span class="hover"></span>
 										<img src="images/video_play.png" alt="" class="video_play"/>
 									</a>
 								</div>
-								<h5><a href="#">THE IMPORTANCE OF LUXURY SUV SALES EXPLAINED</a></h5>
-								<div class="post"><p>10 min 31 sec (12,4 Mb)</p></div>
+								<h5><a href="#">lamborghini preview</a></h5>
+								<div class="post"><p>2 min 6 sec (12,4 Mb)</p></div>
 							</div>
 							<div class="post_block">
 								<div class="preview">
-									<a href="http://player.vimeo.com/video/13412780">
-										<img src="images/placeholders/180x115.gif" alt=""/>
+									<a href="https://www.press.bmwgroup.com/deutschland/video/detail/PF0006452/the-first-ever-bmw-x7-%E2%80%93-online-trailer">
+										<img src="images/placeholders/4.gif" alt=""/>
 										<span class="hover"></span>
 										<img src="images/video_play.png" alt="" class="video_play"/>
 									</a>
 								</div>
-								<h5><a href="#">THE IMPORTANCE OF LUXURY SUV SALES EXPLAINED</a></h5>
-								<div class="post"><p>10 min 31 sec (12,4 Mb)</p></div>
+								<h5><a href="#">BMW X7 PREVIEW</a></h5>
+								<div class="post"><p>8 min 31 sec (8,1 Mb)</p></div>
 							</div>
 							<div class="post_block last">
 								<div class="preview">
 									<a href="http://player.vimeo.com/video/22884674">
-										<img src="images/placeholders/180x115.gif" alt=""/>
+										<img src="images/placeholders/4.gif" alt=""/>
 										<span class="hover"></span>
 										<img src="images/video_play.png" alt="" class="video_play"/>
 									</a>
 								</div>
-								<h5><a href="#">THE IMPORTANCE OF LUXURY SUV SALES EXPLAINED</a></h5>
-								<div class="post"><p>10 min 31 sec (12,4 Mb)</p></div>
+								<h5><a href="#">MERCEDEZ BENS c300 PREVIEW</a></h5>
+								<div class="post"><p>6 min 14 sec (10,4 Mb)</p></div>
 							</div>
 							<div class="clear"></div>
 						</div>
