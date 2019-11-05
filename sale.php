@@ -203,9 +203,10 @@
 							<h4>Comments</h4>
 							<ul>
 						<?
-
-						$comments =	getNewsComment($id);
-						//print_r($comments);
+						$comments =	getSalesCom($id);
+						if(!isset($id)){
+							$id=1;
+						}
 							if ($comments) {
 							
 							foreach ($comments as $comment) {
@@ -224,11 +225,11 @@
 													
 												</div>
 												<div class="date">
-												<?=$comment['comm_create'];
+												<?=$comment['datacreate'];
 												?></div>
 											</div>
 											<div class="comment">
-											<?=$comment['comment'];
+											<?=$comment['sa_comments'];
 											?>
 												
 											</div>

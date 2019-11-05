@@ -14,6 +14,12 @@ function getNewsComment($id){
 	cn.user_id=users.id WHERE news_id=$id ORDER BY comm_create DESC";
 	return queryEasy($sql);
 }
+function getSalesCom($id){
+	$sql="SELECT * FROM comments_sale as cs 
+	INNER JOIN users ON 
+	cs.user_id=users.id WHERE advert_id=$id ORDER BY datacreate DESC";
+	return queryEasy($sql);
+}
 function advOne($id){
 	$sql="SELECT * FROM advert 
 			INNER JOIN volume on
