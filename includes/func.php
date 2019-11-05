@@ -8,6 +8,14 @@ function addComment($text_comment,$news_id,$user_id){
 
 		return mysqli_query($link,$sql);
 }
+function addCommentSale($sa_comments,$adv_id,$user_id){
+
+	global $link;
+	$sql="INSERT INTO comments_sale(sa_comments,advert_id,user_id)
+		VALUES('$sa_comments',$adv_id,$user_id)";
+
+		return mysqli_query($link,$sql);
+}
 function getNewsComment($id){
 	$sql="SELECT * FROM comment_news as cn
 	INNER JOIN users ON

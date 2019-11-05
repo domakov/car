@@ -241,10 +241,13 @@
 									</div>
 								</li>
 								<?}}?>
-
+						
 							</ul>
 						</div>
-
+							<div class="comment_form">
+							<h2><strong>Leave</strong> a comment</h2>
+							<?include_once('includes/addcomment_sale.php')?>
+						</div>
 					
 
 
